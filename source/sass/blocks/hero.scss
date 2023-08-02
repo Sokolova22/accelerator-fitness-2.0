@@ -1,0 +1,217 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 51px 303px 51px 122px;
+  color: $color-default-white;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85);
+  font-family: $ff-primary;
+
+  @include vp-1199 {
+    padding: 82px 45px;
+  }
+
+  @include vp-767 {
+    padding: 108px 15px 98px;
+    max-width: 767px;
+    justify-content: space-between;
+  }
+}
+
+.hero__text {
+  display: block;
+  position: relative;
+  top: 55px;
+  left: 0;
+  min-width: 113px;
+
+  @include vp-1199 {
+    position: relative;
+    top: 22px;
+    left: 0;
+    min-width: 113px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 47%;
+    left: 15px;
+  }
+
+  p {
+    margin: 0;
+    font-family: $ff-secondary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  max-width: 298px;
+  text-align: right;
+  margin-right: 64px;
+
+  @include vp-1199 {
+    max-width: 235px;
+    margin-right: 6px;
+    position: relative;
+    top: -35px;
+    left: -24px;
+  }
+
+  @include vp-767 {
+    position: static;
+    max-width: 290px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 66px;
+    font-family: $ff-primary;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 110.4px;
+    letter-spacing: 4px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px $color-default-white;
+
+    @include vp-1199 {
+      display: inline-block;
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 86.4px;
+      letter-spacing: 4px;
+      text-transform: none;
+      margin-bottom: 52px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 46px;
+    padding: 20px 56px 20px 57px;
+    text-transform: uppercase;
+    font-family: $ff-secondary;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.06px;
+    letter-spacing: 0.2px;
+    color: $color-default-white;
+    background-color: transparent;
+    border: 4px solid $color-default-white;
+    cursor: pointer;
+
+    @include vp-1199 {
+      padding: 20px 33px 20px 33px;
+      margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      margin: 0 auto;
+      margin-bottom: 0;
+      padding: 22px 87px 22px 87px;
+      font-family: $ff-secondary;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.6px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-egyptian-blue;
+      background-color: $color-default-white;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-default-sapphire;
+    }
+  }
+}
+
+.hero__box {
+  margin-left: auto;
+  text-align: left;
+  width: 100%;
+  max-width: 133px;
+
+  @include vp-1199 {
+    text-align: right;
+  }
+
+  p {
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-family: $ff-primary;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 2.2px;
+
+    @include vp-1199 {
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 40.8px;
+      letter-spacing: 2.2px;
+      margin-top: 76px;
+      margin-bottom: 10px;
+    }
+
+    @include vp-767 {
+      margin-top: 0;
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 33.6px;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.hero__image {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: $color-default-sapphire;
+
+  @include vp-1199 {
+    position: static;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  img {
+    min-width: 500px;
+    max-height: 556px;
+    padding: 0;
+
+    @include vp-1199 {
+      min-width: 324px;
+      max-height: 390px;
+    }
+  }
+}

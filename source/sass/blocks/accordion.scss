@@ -1,0 +1,207 @@
+.accordion__element {
+  position: relative;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+
+  h4 {
+    font-family: $ff-secondary;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding: 35px 60px 34px 0;
+    color: $color-default-sapphire;
+    text-align: left;
+    letter-spacing: 0.1px;
+
+    @include vp-1199 {
+      padding: 32px 60px 31px 0;
+    }
+
+    @include vp-767 {
+      padding: 20px 50px 20px 0;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.accordion__element--tab2 {
+  h4 {
+    padding: 40px 50px 34px 0;
+
+    @include vp-1199 {
+      padding: 34px 60px 30px 0;
+      line-height: 28.8px;
+    }
+  }
+}
+
+.accordion__element--tab3 {
+  h4 {
+    padding: 40px 60px 38px 0;
+
+    @include vp-1199 {
+      padding: 30px 60px 34px 0;
+      line-height: 28.8px;
+    }
+  }
+}
+
+.accordion__element--tab4 {
+  h4 {
+    padding: 34px 60px 38px 0;
+
+    @include vp-1199 {
+      padding: 25px 60px 25px 0;
+      line-height: 28.8px;
+    }
+  }
+}
+
+.accordion__element--tab6 {
+  h4 {
+    padding: 30px 60px 34px 0;
+
+    @include vp-1199 {
+      padding: 35px 60px 36px 0;
+    }
+  }
+}
+
+.accordion__element--tab7 {
+  h4 {
+    padding: 32px 60px 34px 0;
+
+    @include vp-1199 {
+      padding: 36px 60px 20px 0;
+    }
+  }
+}
+
+.accordion__element--tab8 {
+  h4 {
+    padding: 40px 60px 34px 0;
+
+    @include vp-1199 {
+      padding: 36px 60px 45px 0;
+    }
+  }
+}
+
+.accordion__element--tab10,
+.accordion__element--tab11 {
+  h4 {
+    padding: 40px 60px 34px 0;
+
+    @include vp-1199 {
+      padding: 36px 60px 35px 0;
+    }
+
+    @include vp-767 {
+      padding: 20px 40px 22px 0;
+    }
+  }
+}
+
+.accordion__element--tab12 {
+  h4 {
+    @include vp-767 {
+      padding: 23px 40px 22px 0;
+    }
+  }
+}
+
+.accordion__button {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background: url("../../img/sprite/icon-open.svg") no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  transition: background 0.3s;
+  transform: translate(0, -50%);
+  border: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    background: url("../../img/sprite/icon-open-hf.svg") no-repeat;
+    background-size: cover;
+
+    @include vp-767 {
+      background-size: 32px 32px;
+    }
+  }
+
+  &:disabled {
+    background: url("../../img/sprite/icon-open-disabled.svg") no-repeat;
+    pointer-events: none;
+  }
+
+  @include vp-1199 {
+    &--tab4 {
+      top: 54px;
+    }
+  }
+
+  @include vp-767 {
+    top: 48px;
+    right: -7px;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+
+    &--tab11,
+    &--tab12 {
+      top: 42px;
+    }
+  }
+}
+
+.accordion__element.is-active .accordion__button {
+  background: url("../../img/sprite/icon-close-active.svg") no-repeat;
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+  }
+}
+
+.accordion__content {
+  font-family: $ff-secondary;
+  font-weight: 300;
+  margin: -32px 0 30px;
+  padding-right: 176px;
+  font-size: 18px;
+  line-height: 25.2px;
+
+  @include vp-1199 {
+    padding-right: 160px;
+  }
+
+  @include vp-767 {
+    margin: -24px 0 21px;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}
+
+.accordion__wrapper {
+  p {
+    margin-bottom: -6px;
+
+    @include vp-767 {
+      margin-top: 19px;
+      margin-bottom: -3px;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}

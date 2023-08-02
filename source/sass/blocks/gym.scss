@@ -1,0 +1,232 @@
+.gym {
+  position: relative;
+}
+
+.gym__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 120px 103px 235px 163px;
+  display: flex;
+  justify-content: center;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 45px 183px 45px;
+  }
+
+  @include vp-767 {
+    padding: 65px 0 10px 0;
+  }
+}
+
+.gym__info {
+  width: 100%;
+  max-width: 355px;
+  margin-right: 85px;
+
+  @include vp-1199 {
+    max-width: 502px;
+    margin: 0 auto;
+  }
+}
+
+.gym__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 40px;
+
+  @include vp-1199 {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-top: 0;
+    margin-bottom: 33px;
+    text-align: left;
+  }
+
+  p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: $ff-secondary;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-1199 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gym__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+    font-family: $ff-primary;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 1.5px;
+
+    @include vp-1199 {
+      margin-bottom: 3px;
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 50.4px;
+      letter-spacing: 1.1px;
+    }
+
+    @include vp-767 {
+      font-family: $ff-primary;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38.4px;
+      letter-spacing: 1.1px;
+    }
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: $ff-secondary;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include vp-1199 {
+      font-family: $ff-secondary;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+
+.gym__text {
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: $ff-secondary;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.gym__image {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 1/4;
+
+  @include vp-1199 {
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 54%;
+  left: 39.5%;
+  max-width: 364px;
+  min-height: 228px;
+
+  @include vp-1199 {
+    top: 68.5%;
+    left: calc(50% - 133px);
+    max-width: 266px;
+    max-height: 167px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    height: 167px;
+  }
+}
+
+.gym__video {
+  object-fit: cover;
+  margin: 0 auto;
+  min-height: 228px;
+
+  @include vp-1199 {
+    min-height: 167px;
+  }
+}
+
+.gym__video-button {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/sprite/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center center;
+
+  @include vp-1199 {
+    top: 20%;
+    left: calc(50% - 37px);
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+  }
+
+  @include hover-focus {
+    background-image: url("../../img/sprite/icon-play-hf.svg");
+  }
+
+  &:disabled {
+    background-image: url("../../img/sprite/icon-play-disabled.svg");
+    pointer-events: none;
+  }
+}
