@@ -151,16 +151,23 @@
   position: relative;
   grid-column: 2/3;
   grid-row: 1/4;
+  min-width: 660px;
+  max-height: 401px;
 
   @include vp-1199 {
     margin: 0 auto;
+    min-width: 678px;
+    max-height: 345px;
   }
 
   @include vp-767 {
     margin-bottom: 40px;
+    min-width: 320px;
+    max-height: 313px;
   }
 
   img {
+    background-color: $color-link-water;
     width: 100%;
     padding: 0;
   }

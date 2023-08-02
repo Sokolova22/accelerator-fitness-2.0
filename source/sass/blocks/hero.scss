@@ -194,6 +194,7 @@
   position: relative;
   top: 0;
   right: 0;
+
   background-color: $color-default-sapphire;
 
   @include vp-1199 {
@@ -205,6 +206,7 @@
   }
 
   img {
+    background-color: $color-default-sapphire;
     min-width: 500px;
     max-height: 556px;
     padding: 0;
