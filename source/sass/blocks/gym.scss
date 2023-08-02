@@ -208,7 +208,7 @@
   height: 100px;
   background-color: transparent;
   border: none;
-  background-image: url("../../img/sprite/icon-play.svg");
+  background-image: url("../img/sprite/icon-play.svg");
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: center center;
@@ -222,11 +222,11 @@
   }
 
   @include hover-focus {
-    background-image: url("../../img/sprite/icon-play-hf.svg");
+    background-image: url("../img/sprite/icon-play-hf.svg");
   }
 
   &:disabled {
-    background-image: url("../../img/sprite/icon-play-disabled.svg");
+    background-image: url("../img/sprite/icon-play-disabled.svg");
     pointer-events: none;
   }
 }

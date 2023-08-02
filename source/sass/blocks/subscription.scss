@@ -53,13 +53,13 @@
   width: 321px;
   height: 384px;
   background-color: transparent;
-  background-image: url("../../img/weights/weights-desktop.png");
+  background-image: url("../img/weights/weights-desktop.png");
   background-repeat: no-repeat;
   background-size: 321px 384px;
   background-position: bottom right;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/weights/weights-desktop@2x.png");
+    background-image: url("../img/weights/weights-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: 321px 384px;
     background-position: bottom right;
@@ -70,13 +70,13 @@
     left: calc(100% - 289px);
     width: 289px;
     height: 345px;
-    background-image: url("../../img/weights/weights-tablet.png");
+    background-image: url("../img/weights/weights-tablet.png");
     background-repeat: no-repeat;
     background-size: 289px 345px;
     background-position: bottom right;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/weights/weights-tablet@2x.png");
+      background-image: url("../img/weights/weights-tablet@2x.png");
       background-repeat: no-repeat;
       background-size: 289px 345px;
       background-position: bottom right;

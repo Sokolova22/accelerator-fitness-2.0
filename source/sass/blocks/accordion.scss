@@ -121,7 +121,7 @@
   right: 0;
   width: 42px;
   height: 42px;
-  background: url("../../img/sprite/icon-open.svg") no-repeat;
+  background: url("../img/sprite/icon-open.svg") no-repeat;
   background-size: cover;
   background-color: transparent;
   transition: background 0.3s;
@@ -130,7 +130,7 @@
   cursor: pointer;
 
   @include hover-focus {
-    background: url("../../img/sprite/icon-open-hf.svg") no-repeat;
+    background: url("../img/sprite/icon-open-hf.svg") no-repeat;
     background-size: cover;
 
     @include vp-767 {
@@ -139,7 +139,7 @@
   }
 
   &:disabled {
-    background: url("../../img/sprite/icon-open-disabled.svg") no-repeat;
+    background: url("../img/sprite/icon-open-disabled.svg") no-repeat;
     pointer-events: none;
   }
 
@@ -164,7 +164,7 @@
 }
 
 .accordion__element.is-active .accordion__button {
-  background: url("../../img/sprite/icon-close-active.svg") no-repeat;
+  background: url("../img/sprite/icon-close-active.svg") no-repeat;
 
   @include vp-767 {
     width: 32px;

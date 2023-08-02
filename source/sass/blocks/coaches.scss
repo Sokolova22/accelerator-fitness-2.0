@@ -1,5 +1,4 @@
 .coaches {
-  // padding: 0 47px;
   position: relative;
 }
 
@@ -246,7 +245,7 @@ img {
     top: 51%;
     left: 29px;
     transform: translate(0, -50%);
-    background-image: url("../../img/sprite/icon-arrow-prev.svg");
+    background-image: url("../img/sprite/icon-arrow-prev.svg");
 
     @include vp-1199 {
       top: 48%;
@@ -262,7 +261,7 @@ img {
     &:hover,
     &:focus {
       left: 29px;
-      background-image: url("../../img/sprite/icon-arrow-prev-hf.svg");
+      background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;
 
@@ -274,7 +273,7 @@ img {
     }
 
     &:active {
-      background-image: url("../../img/sprite/icon-arrow-prev-active.svg");
+      background-image: url("../img/sprite/icon-arrow-prev-active.svg");
       background-size: 56px 56px;
 
       @include vp-767 {
@@ -290,7 +289,7 @@ img {
     right: 29px;
     transform: translate(0, -50%);
     rotate: 180deg;
-    background-image: url("../../img/sprite/icon-arrow-prev.svg");
+    background-image: url("../img/sprite/icon-arrow-prev.svg");
 
     @include vp-1199 {
       top: calc(48% - 56px);
@@ -307,7 +306,7 @@ img {
     &:focus {
       top: calc(59% - 56px);
       right: 29px;
-      background-image: url("../../img/sprite/icon-arrow-prev-hf.svg");
+      background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;
 
@@ -324,7 +323,7 @@ img {
     }
 
     &:active {
-      background-image: url("../../img/sprite/icon-arrow-prev-active.svg");
+      background-image: url("../img/sprite/icon-arrow-prev-active.svg");
       background-size: 56px 56px;
 
       @include vp-767 {
