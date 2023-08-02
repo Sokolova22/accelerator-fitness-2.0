@@ -1687,9 +1687,13 @@ button,
   color: #15ab07;
 }
 
-.header__wrapper {
+.header {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
+  width: 100%;
+}
+
+.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2015,6 +2019,7 @@ button,
 }
 
 .subscription {
+  width: 100%;
   background-color: #f8f9fc;
   position: relative;
   padding: 120px 103px;
@@ -3605,6 +3610,7 @@ img {
   max-width: 80px;
   margin: 0;
   margin-right: 26px;
+  margin-top: 4px;
   margin-bottom: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3612,12 +3618,15 @@ img {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  border-radius: 50%;
+  background-color: #4f545f;
 }
 
 .feedback__avatar img {
-  margin-top: 5px;
+  background-color: #4f545f;
   padding: 0;
   width: 100%;
+  width: 80px;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: transparent;
@@ -4029,6 +4038,11 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.footer__social svg:hover,
+.footer__social svg:focus-visible {
+  fill: #ffffff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -4099,7 +4113,8 @@ img {
   }
 
   .header__logo {
-    padding-top: 0;
+    position: relative;
+    top: -10px;
   }
 
   .hero {
@@ -4857,6 +4872,10 @@ img {
     letter-spacing: 0.4px;
   }
 
+  .header__logo {
+    top: -5px;
+  }
+
   .hero {
     padding: 108px 15px 98px;
     max-width: 767px;
@@ -5067,7 +5086,7 @@ img {
   }
 
   .super-games__image {
-    min-width: 290px;
+    max-width: 290px;
   }
 
   .coaches__wrapper {

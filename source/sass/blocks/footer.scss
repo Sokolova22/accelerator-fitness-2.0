@@ -125,6 +125,8 @@
 
   li {
     position: relative;
+    // background-color: $color-default-white;
+    // border-radius: 50%;
   }
 
   li:not(:last-of-type) {
@@ -161,5 +163,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &:hover,
+    &:focus-visible {
+      fill: $color-default-white;
+    }
   }
 }
