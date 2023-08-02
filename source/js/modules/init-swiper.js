@@ -1,4 +1,3 @@
-import { Swiper } from './vendor/swiper';
 
 export const swiper = new Swiper('.coaches__swiper', {
 
