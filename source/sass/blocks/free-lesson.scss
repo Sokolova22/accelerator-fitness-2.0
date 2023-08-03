@@ -49,23 +49,27 @@
 
 .free-lesson__wrapper {
   width: 100%;
+  margin-top: -10px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 30px;
+  grid-template-rows: repeat(2, auto);
+  gap: 30px 10px;
 
   @include vp-1199 {
     column-gap: 60px;
   }
 
   @include vp-767 {
+    gap: 0;
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   button {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     color: $color-default-white;
     border: 3px solid $color-default-white;
     background-color: transparent;
@@ -83,6 +87,7 @@
 
     @include vp-767 {
       width: 100%;
+      margin-top: 10px;
     }
   }
 }
@@ -105,10 +110,6 @@
     width: 100%;
     margin-bottom: 51px;
   }
-}
-
-.free-lesson__input--name {
-  margin-right: 30px;
 }
 
 ::-webkit-input-placeholder {
