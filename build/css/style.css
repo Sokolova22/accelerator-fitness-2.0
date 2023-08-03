@@ -3636,7 +3636,7 @@ img {
   grid-template-columns: auto auto;
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
-  gap: 30px 10px;
+  gap: 30px 30px;
 }
 
 .free-lesson__wrapper button {
