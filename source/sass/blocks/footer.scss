@@ -147,7 +147,9 @@
     &:focus-visible {
       background-color: $color-egyptian-blue;
       outline: none;
-      fill: $color-default-white;
+      svg {
+        fill: $color-default-white;
+      }
     }
 
     &:active {
