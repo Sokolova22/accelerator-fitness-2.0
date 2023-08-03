@@ -4,9 +4,12 @@ let videoButton = document.querySelector('.gym__video-button');
 function videoButtonOnclick() {
   if (video.paused) {
     video.play();
+    video.controls = true;
+    video.volume = 0.2;
     videoButton.style.display = 'none';
   } else {
     video.pause();
+    video.controls = false;
   }
 }
 

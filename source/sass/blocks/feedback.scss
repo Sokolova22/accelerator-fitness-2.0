@@ -83,7 +83,8 @@
     line-height: 30px;
 
     @include vp-767 {
-      margin-bottom: 18px;
+      line-height: 26px;
+      margin-bottom: 23px;
     }
   }
 
@@ -94,6 +95,11 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22.4px;
+    text-align: left;
+
+    @include vp-767 {
+      text-align: center;
+    }
   }
 }
 
@@ -113,20 +119,17 @@
     position: absolute;
     width: 68px;
     height: 68px;
+    top: 35px;
     left: 41px;
   }
 
   img {
+    border-radius: 50%;
     background-color: $color-bright-grey;
     padding: 0;
     width: 100%;
-    width: 80px;
+    max-width: 80px;
     object-fit: cover;
-    background-color: transparent;
-
-    @include vp-767 {
-      margin-top: -5px;
-    }
   }
 }
 

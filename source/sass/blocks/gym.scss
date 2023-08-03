@@ -147,8 +147,11 @@
   }
 }
 
-.gym__image {
+.gym__box {
   position: relative;
+}
+
+.gym__image {
   grid-column: 2/3;
   grid-row: 1/4;
   min-width: 660px;
@@ -176,13 +179,13 @@
 .gym__video-wrapper {
   position: absolute;
   width: 100%;
-  top: 54%;
-  left: 39.5%;
+  top: 71.5%;
+  left: -9.5%;
   max-width: 364px;
   min-height: 228px;
 
   @include vp-1199 {
-    top: 68.5%;
+    top: 75.5%;
     left: calc(50% - 133px);
     max-width: 266px;
     max-height: 167px;
@@ -192,6 +195,8 @@
     position: relative;
     top: 0;
     left: 0;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 320px;
     height: 167px;
   }
