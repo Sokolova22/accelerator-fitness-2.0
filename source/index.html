@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнес центр SUPERGYM">
   <title>Fitness 2.0</title>
   <link rel="icon" href="./img/favicon.ico">
@@ -819,12 +819,13 @@
               <div class="feedback__slide swiper-slide">
                 <div class="feedback__avatar">
                   <picture>
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/feedback/feedback-photo-big@2x.webp 1x, ./img/feedback/feedback-photo-big@2x.webp 2x">
-                    <source type="image/webp" srcset="./img0/feedback/feedback-photo-small.webp 1x, ./img/feedback/feedback-photo-small@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/feedback/feedback-photo-small@2x.webp 1x, ./img/feedback/feedback-photo-small@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img0/feedback/feedback-photo-big.webp 1x, ./img/feedback/feedback-photo-big@2x.webp 2x">
 
-                    <source media="(min-width: 768px)" srcset="./img/feedback/feedback-photo-big.png 1x, ./img/feedback/feedback-photo-big@2x.png 2x" width="80" height="80">
-                    <img src="./img/feedback/feedback-photo-small.png" srcset="./img/feedback/feedback-photo-small@2x.png 2x" width="68" height="68" alt="Фото пользователя.">
+                    <source media="(max-width: 767px)" srcset="./img/feedback/feedback-photo-small.png 1x, ./img/feedback/feedback-photo-small@2x.png 2x" width="68" height="68">
+                    <img src="./img/feedback/feedback-photo-big.png" srcset="./img/feedback/feedback-photo-big@2x.png 2x" width="80" height="80" alt="Фото пользователя.">
                   </picture>
+
                 </div>
                 <div class="feedback__description">
                   <h6>Анна Орлова</h6>
@@ -884,8 +885,8 @@
                   <input type="text" name="user-name" placeholder="Имя">
                 </label>
               </div>
-              <div class="custom-input free-lesson__input" data-validate-type="phone" , data-on-input-validate, data-message-base="Поле обязательно к заполнению" ,
-                data-message-extra="Проверьте корректность заполнения поля" , data-message-success="Поле заполнено верно" , data-phone-length="18" data-required>
+              <div class="custom-input free-lesson__input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-phone-length="18" data-required>
                 <label>
                   <input type="tel" name="user-phone" placeholder="Телефон">
                 </label>
