@@ -33,29 +33,31 @@
 
     <main>
       <section class="hero">
-        <div class="hero__text">
-          <p>Тренажёрный зал <br>Групповые занятия <br>Кардио-зона </p>
-        </div>
-
         <div class="hero__wrapper">
-          <div class="hero__box">
-            <p>омск</p>
+          <div class="hero__info">
+            <p>Омск</p>
+            <h1>Фитнес<br>центр</h1>
+            <ul class="hero__list">
+              <li class="hero__item">Тренажёрный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
           </div>
-          <h1>Фитнес<br>центр</h1>
-          <a href="#subscription">Купить абонемент</a>
+          <a class="hero__button" href="#subscription">Купить абонемент</a>
+          <div class="hero__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
 
+              <source media="(max-width: 1199px)" srcset="./img/hero/hero-tablet.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
+
+              <img src="./img/hero/hero-desktop.jpg" srcset="./img/hero/hero-desktop@2x.jpg 2x" alt="Supergym." width="500" height="556">
+            </picture>
+
+          </div>
         </div>
-        <div class="hero__image">
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)" srcset="./img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x">
 
-            <source media="(max-width: 1199px)" srcset="./img/hero/hero-tablet.jpg 1x, ./img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
 
-            <img src="./img/hero/hero-desktop.jpg" srcset="./img/hero/hero-desktop@2x.jpg 2x" alt="Supergym." width="500" height="556">
-          </picture>
-
-        </div>
       </section>
       <section class="gym">
         <div class="gym__wrapper">
@@ -885,13 +887,13 @@
             <div class="free-lesson__wrapper">
               <div class="custom-input free-lesson__input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-required>
-                <label>
+                <label aria-label="Поле ввода имени.">
                   <input type="text" name="user-name" placeholder="Имя">
                 </label>
               </div>
               <div class="custom-input free-lesson__input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-phone-length="18" data-required>
-                <label>
+                <label aria-label="Поле ввода контактного номера телефона.">
                   <input type="tel" name="user-phone" placeholder="Телефон">
                 </label>
               </div>
@@ -903,7 +905,7 @@
           <h2>Контакты</h2>
           <div class="contact-information__wrapper">
             <div class="contact-information__group contact-information__group--location">
-              <div class="contact-information__box contact-information__box--adress">
+              <div class="contact-information__box contact-information__box--address">
                 <h6>Адрес:</h6>
                 <p>г. Омск, ул. 60 лет Октября, 7</p>
               </div>
@@ -938,7 +940,7 @@
             </picture>
           </a>
         </div>
-        <div class="footer__wrapp">
+        <div class="footer__wrap">
           <ul>
             <li><a href="#">Услуги</a></li>
             <li><a href="#subscription">Абонементы</a></li>
