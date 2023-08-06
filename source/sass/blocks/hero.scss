@@ -6,7 +6,7 @@
 }
 
 .hero__wrapper {
-
+  max-width: 1366px;
   margin: 0 auto;
   padding: 51px 303px 51px 122px;
   display: grid;
@@ -45,7 +45,6 @@
   @include vp-767 {
     margin: 0 auto;
     padding: 22px 0 0;
-    // padding: 0;
     grid-template-columns: 113px 188px;
     column-gap: 0;
   }
@@ -182,6 +181,17 @@
     min-width: 290px;
     grid-column: 1 / 3;
 
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-egyptian-blue;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-sapphire;
   }
 }
 
