@@ -131,6 +131,7 @@
 
 .contact-information__box:not(:last-child) {
   margin-bottom: 12px;
+
   @include vp-1199 {
     margin-bottom: 25px;
   }

@@ -1,7 +1,7 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { Form } from './modules/form-validate/form';
-import { initTabs } from './init-tabs';
-import { initAccordions } from './init-accordion';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {Form} from './modules/form-validate/form';
+import {initTabs} from './init-tabs';
+import {initAccordions} from './init-accordion';
 import './modules/play.js';
 import './modules/init-swiper.js';
 

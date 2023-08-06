@@ -1,3 +1,4 @@
+// import {Swiper} from './modules/swiper';
 
 export const swiper = new Swiper('.coaches__swiper', {
 
@@ -39,4 +40,3 @@ export const swiperFeedback = new Swiper('.feedback__swiper', {
     disabledClass: 'feedback__button-disabled',
   },
 });
-
