@@ -80,6 +80,22 @@
   background-position: center;
   background-size: 100%;
 
+  &::after {
+    position: absolute;
+    content: attr(data-name);
+    z-index: 5;
+    bottom: 8%;
+    right: 0;
+    left: 29%;
+
+    font-family: $ff-secondary;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-default-white;
+
+  }
+
   @include vp-767 {
     height: 274px;
   }
@@ -111,7 +127,7 @@
       }
     }
 
-    span {
+    &::after {
       display: none;
     }
   }
@@ -121,42 +137,47 @@
       display: none;
     }
   }
-}
 
-img {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  object-fit: cover;
-  background-color: $color-ghost-white;
-}
-
-.coaches__name {
-  position: absolute;
-  bottom: 8%;
-  right: 0;
-  left: 0;
-
-  span {
-    text-align: center;
-    display: block;
-    font-family: $ff-secondary;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    color: $color-default-white;
-
-    &:hover {
-      display: none;
-    }
-
-    &:focus {
-      display: none;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    object-fit: cover;
+    background-color: $color-ghost-white;
   }
+
+
 }
+
+
+
+
+// .coaches__name {
+//   position: absolute;
+//   bottom: 8%;
+//   right: 0;
+//   left: 0;
+
+//   span {
+//     text-align: center;
+//     display: block;
+//     font-family: $ff-secondary;
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 27px;
+//     color: $color-default-white;
+
+//     &:hover {
+//       display: none;
+//     }
+
+//     &:focus {
+//       display: none;
+//     }
+//   }
+// }
 
 .coaches__description {
   padding: 50px 46px;

@@ -3117,6 +3117,19 @@ button,
   background-position: center;
   background-size: 100%;
 }
+.coaches-slide::after {
+  position: absolute;
+  content: attr(data-name);
+  z-index: 5;
+  bottom: 8%;
+  right: 0;
+  left: 29%;
+  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
 @media (max-width: 767px) {
   .coaches-slide {
     height: 274px;
@@ -3149,14 +3162,13 @@ button,
   font-size: 18px;
   line-height: 27px;
 }
-.coaches-slide:hover span {
+.coaches-slide:hover::after {
   display: none;
 }
 .coaches-slide:focus span {
   display: none;
 }
-
-img {
+.coaches-slide img {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -3167,28 +3179,6 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #f8f9fc;
-}
-
-.coaches__name {
-  position: absolute;
-  bottom: 8%;
-  right: 0;
-  left: 0;
-}
-.coaches__name span {
-  text-align: center;
-  display: block;
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  color: #ffffff;
-}
-.coaches__name span:hover {
-  display: none;
-}
-.coaches__name span:focus {
-  display: none;
 }
 
 .coaches__description {
