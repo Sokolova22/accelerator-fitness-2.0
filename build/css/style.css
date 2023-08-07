@@ -1156,28 +1156,28 @@ button.swiper-pagination-bullet {
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: "alumni-sans";
+  font-family: "Alumni Sans";
   font-display: swap;
   src: url("../fonts/alumni-sans-600.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: "roboto-condensed";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/roboto-condensed-300.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "roboto-condensed";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/roboto-condensed-400.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "roboto-condensed";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/roboto-condensed-700.woff2") format("woff2");
 }
@@ -1507,68 +1507,60 @@ button,
 .custom-textarea label textarea:focus {
   border: 1px solid #ffffff;
 }
-.custom-input label input::-webkit-input-placeholder,
-.custom-input label textarea::-webkit-input-placeholder,
-.custom-textarea label input::-webkit-input-placeholder,
-.custom-textarea label textarea::-webkit-input-placeholder {
+.custom-input label input::-webkit-input-placeholder, .custom-input label textarea::-webkit-input-placeholder, .custom-textarea label input::-webkit-input-placeholder, .custom-textarea label textarea::-webkit-input-placeholder {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.custom-input label input::-moz-placeholder,
-.custom-input label textarea::-moz-placeholder,
-.custom-textarea label input::-moz-placeholder,
-.custom-textarea label textarea::-moz-placeholder {
+.custom-input label input::-moz-placeholder, .custom-input label textarea::-moz-placeholder, .custom-textarea label input::-moz-placeholder, .custom-textarea label textarea::-moz-placeholder {
   opacity: 1;
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.custom-input label input:-moz-placeholder,
-.custom-input label textarea:-moz-placeholder,
-.custom-textarea label input:-moz-placeholder,
-.custom-textarea label textarea:-moz-placeholder {
-  opacity: 1;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.custom-input label input:-ms-input-placeholder,
-.custom-input label textarea:-ms-input-placeholder,
-.custom-textarea label input:-ms-input-placeholder,
-.custom-textarea label textarea:-ms-input-placeholder {
+.custom-input label input:-ms-input-placeholder, .custom-input label textarea:-ms-input-placeholder, .custom-textarea label input:-ms-input-placeholder, .custom-textarea label textarea:-ms-input-placeholder {
   opacity: 1;
   -ms-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.custom-input label input:focus::-webkit-input-placeholder,
-.custom-input label textarea:focus::-webkit-input-placeholder,
-.custom-textarea label input:focus::-webkit-input-placeholder,
-.custom-textarea label textarea:focus::-webkit-input-placeholder {
+.custom-input label input::-ms-input-placeholder, .custom-input label textarea::-ms-input-placeholder, .custom-textarea label input::-ms-input-placeholder, .custom-textarea label textarea::-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.custom-input label input::placeholder,
+.custom-input label textarea::placeholder,
+.custom-textarea label input::placeholder,
+.custom-textarea label textarea::placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.custom-input label input:focus::-webkit-input-placeholder, .custom-input label textarea:focus::-webkit-input-placeholder, .custom-textarea label input:focus::-webkit-input-placeholder, .custom-textarea label textarea:focus::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.custom-input label input:focus::-moz-placeholder,
-.custom-input label textarea:focus::-moz-placeholder,
-.custom-textarea label input:focus::-moz-placeholder,
-.custom-textarea label textarea:focus::-moz-placeholder {
+.custom-input label input:focus::-moz-placeholder, .custom-input label textarea:focus::-moz-placeholder, .custom-textarea label input:focus::-moz-placeholder, .custom-textarea label textarea:focus::-moz-placeholder {
   opacity: 0;
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.custom-input label input:focus:-moz-placeholder,
-.custom-input label textarea:focus:-moz-placeholder,
-.custom-textarea label input:focus:-moz-placeholder,
-.custom-textarea label textarea:focus:-moz-placeholder {
-  opacity: 0;
-  -moz-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.custom-input label input:focus:-ms-input-placeholder,
-.custom-input label textarea:focus:-ms-input-placeholder,
-.custom-textarea label input:focus:-ms-input-placeholder,
-.custom-textarea label textarea:focus:-ms-input-placeholder {
+.custom-input label input:focus:-ms-input-placeholder, .custom-input label textarea:focus:-ms-input-placeholder, .custom-textarea label input:focus:-ms-input-placeholder, .custom-textarea label textarea:focus:-ms-input-placeholder {
   opacity: 0;
   -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.custom-input label input:focus::-ms-input-placeholder, .custom-input label textarea:focus::-ms-input-placeholder, .custom-textarea label input:focus::-ms-input-placeholder, .custom-textarea label textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.custom-input label input:focus::placeholder,
+.custom-input label textarea:focus::placeholder,
+.custom-textarea label input:focus::placeholder,
+.custom-textarea label textarea:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 767px) {
@@ -1615,7 +1607,7 @@ button,
   left: 0;
   bottom: -25px;
   color: #ff121f;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -1651,7 +1643,7 @@ button,
   margin: 0 auto;
   padding: 30px 103px;
   background-color: transparent;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 31.2px;
@@ -1660,7 +1652,7 @@ button,
 @media (max-width: 1199px) {
   .header__wrapper {
     padding: 40px 45px;
-    font-family: "alumni-sans", "Arial", sans-serif;
+    font-family: "Alumni Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 22px;
     line-height: 19px;
@@ -1671,7 +1663,7 @@ button,
 @media (max-width: 767px) {
   .header__wrapper {
     padding: 15px 15px;
-    font-family: "alumni-sans", "Arial", sans-serif;
+    font-family: "Alumni Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -1713,7 +1705,7 @@ button,
 
 .hero {
   width: 100%;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   color: #ffffff;
   background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85);
 }
@@ -1830,7 +1822,7 @@ button,
   margin: 0;
   margin-top: -5px;
   padding: 0;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 92px;
   line-height: 110.4px;
@@ -1863,7 +1855,7 @@ button,
   margin: 0;
   padding: 54px 16px 0 0;
   list-style: none;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -1894,7 +1886,7 @@ button,
   grid-column: 1/2;
   justify-self: flex-end;
   align-self: flex-start;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -2028,7 +2020,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 5px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -2069,7 +2061,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 7px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 57.6px;
@@ -2078,7 +2070,7 @@ button,
 @media (max-width: 1199px) {
   .gym__heading h2 {
     margin-bottom: 3px;
-    font-family: "alumni-sans", "Arial", sans-serif;
+    font-family: "Alumni Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 42px;
     line-height: 50.4px;
@@ -2087,7 +2079,7 @@ button,
 }
 @media (max-width: 767px) {
   .gym__heading h2 {
-    font-family: "alumni-sans", "Arial", sans-serif;
+    font-family: "Alumni Sans", "Arial", sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 38.4px;
@@ -2097,14 +2089,14 @@ button,
 .gym__heading p {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
 }
 @media (max-width: 1199px) {
   .gym__heading p {
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -2127,7 +2119,7 @@ button,
 .gym__text p {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -2333,7 +2325,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -2420,7 +2412,7 @@ button,
           justify-content: center;
   border: none;
   background-color: transparent;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -2430,7 +2422,7 @@ button,
 @media (max-width: 1199px) {
   .subscription__control {
     padding: 0 4px 13px;
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -2440,7 +2432,7 @@ button,
   .subscription__control {
     padding: 0;
     padding-bottom: 15px;
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -2476,7 +2468,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -2561,7 +2553,7 @@ button,
 .subscription__element .subscription__element-wrapper h3 {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 28.64px;
@@ -2569,7 +2561,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscription__element .subscription__element-wrapper h3 {
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 24.23px;
@@ -2579,7 +2571,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 66px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -2594,7 +2586,7 @@ button,
   display: block;
   width: 206px;
   padding: 24px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
@@ -2643,7 +2635,7 @@ button,
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 150px;
@@ -2652,7 +2644,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscription__element .subscription__text::before {
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 80px;
     line-height: 120px;
@@ -2668,7 +2660,7 @@ button,
   position: relative;
   z-index: 2;
   margin-right: 8px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -2676,7 +2668,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscription__element .subscription__text span {
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
@@ -2804,7 +2796,7 @@ button,
   padding: 0;
   margin: 0;
   margin-left: 12px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 82px;
   line-height: 78.72px;
@@ -2830,7 +2822,7 @@ button,
   margin: 0;
   margin-top: -10px;
   margin-bottom: 20px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -2868,7 +2860,7 @@ button,
 }
 
 .super-games__item span {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
@@ -2890,7 +2882,7 @@ button,
   padding: 0;
   margin: 0;
   margin-top: -5px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -2928,7 +2920,7 @@ button,
   margin-top: 4px;
   margin-bottom: 20px;
   margin-left: -25px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -2938,7 +2930,7 @@ button,
   .super-games__item p > span {
     margin-left: -15px;
     margin-bottom: 5px;
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
@@ -2979,7 +2971,7 @@ button,
   padding: 24px;
   background-color: transparent;
   border: 4px solid #ffffff;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14.06px;
@@ -3037,7 +3029,7 @@ button,
 .coaches__wrapper h2 {
   margin: 0;
   margin-bottom: 48px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -3124,7 +3116,7 @@ button,
   bottom: 8%;
   right: 0;
   left: 29%;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -3157,7 +3149,7 @@ button,
   position: static;
   display: block;
   text-align: center;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -3203,7 +3195,7 @@ button,
 .coaches__description span {
   text-align: center;
   display: block;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
@@ -3213,7 +3205,7 @@ button,
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -3224,7 +3216,7 @@ button,
   padding: 0;
   padding-left: 22px;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -3388,7 +3380,7 @@ button,
 .advantages__wrapper h2 {
   padding: 0;
   margin: 0;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -3412,7 +3404,7 @@ button,
 .advantages__wrapper h6 {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 33px;
@@ -3502,7 +3494,7 @@ button,
 
 .advantages__item p {
   display: block;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 71px;
   line-height: 106.5px;
@@ -3524,7 +3516,7 @@ button,
   margin: 0;
   display: block;
   margin-top: -23px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -3614,7 +3606,7 @@ button,
   display: block;
   margin: 0 auto;
   text-align: center;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 74px;
   line-height: 111px;
@@ -3653,7 +3645,7 @@ button,
 .advantages__description p {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22.4px;
@@ -3675,7 +3667,7 @@ button,
 .advantages__description--gyms h6 {
   padding: 0;
   margin: -16px 0 32px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 39px;
@@ -3693,7 +3685,7 @@ button,
   }
 }
 .advantages__description--gyms P {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -3759,7 +3751,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 31px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -3840,20 +3832,20 @@ button,
   }
 }
 .promo__container h4 {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 43.68px;
 }
 .promo__container span {
   display: block;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 70px;
   line-height: 60px;
 }
 .promo__container p {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25.2px;
@@ -3962,7 +3954,7 @@ button,
   padding: 0;
   margin: 0;
   margin-top: auto;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16.41px;
@@ -4064,19 +4056,19 @@ button,
   }
 }
 .promo__box h4 {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 43.68px;
 }
 .promo__box p {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22.4px;
 }
 .promo__box a {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14.06px;
@@ -4125,7 +4117,7 @@ button,
 }
 .faq__wrapper h2 {
   margin: 0;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -4262,7 +4254,7 @@ button,
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 .accordion__element h4 {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   font-size: 24px;
   margin: 0;
@@ -4436,7 +4428,7 @@ button,
 }
 
 .accordion__content {
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 300;
   margin: -32px 0 30px;
   padding-right: 176px;
@@ -4506,7 +4498,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 36px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 64.8px;
@@ -4575,7 +4567,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -4589,7 +4581,7 @@ button,
 .feedback__slide p {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22.4px;
@@ -4823,7 +4815,7 @@ button,
   margin: 0;
   margin-left: -25px;
   margin-bottom: 10px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 81.24px;
@@ -4892,7 +4884,7 @@ button,
   color: #ffffff;
   border: 3px solid #ffffff;
   background-color: transparent;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16.41px;
@@ -4930,48 +4922,31 @@ button,
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+.free-lesson__input input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.free-lesson__input input::-moz-placeholder {
+  color: #ffffff;
+}
+.free-lesson__input input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.free-lesson__input input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.free-lesson__input input::placeholder {
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .free-lesson__input {
     width: 100%;
     margin-bottom: 51px;
   }
-}
-
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #ffffff;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #ffffff;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #ffffff;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  font-family: "roboto-condensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: #ffffff;
 }
 
 .contact-information {
@@ -4999,7 +4974,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
-  font-family: "alumni-sans", "Arial", sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
   line-height: 81.24px;
@@ -5081,7 +5056,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 5px;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -5101,7 +5076,7 @@ button,
 .contact-information__group p {
   padding: 0;
   margin: 0;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21.33px;
@@ -5242,7 +5217,7 @@ button,
 
 .footer-nav__link {
   display: block;
-  font-family: "roboto-condensed", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.41px;
@@ -5264,7 +5239,7 @@ button,
 }
 @media (max-width: 767px) {
   .footer-nav__link {
-    font-family: "roboto-condensed", "Arial", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18.75px;

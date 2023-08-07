@@ -104,46 +104,18 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $color-default-white;
+    font-family: $ff-secondary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
   }
 
   @include vp-767 {
     width: 100%;
     margin-bottom: 51px;
   }
-}
-
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  font-family: $ff-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: $color-default-white;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  font-family: $ff-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: $color-default-white;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  font-family: $ff-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: $color-default-white;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  font-family: $ff-secondary;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16.41px;
-  color: $color-default-white;
 }
