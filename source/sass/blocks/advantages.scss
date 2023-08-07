@@ -15,6 +15,7 @@
 }
 
 .advantages__wrapper {
+
   @include vp-767 {
     padding: 0;
   }
@@ -66,7 +67,6 @@
 }
 
 .advantages__list {
-  position: relative;
   list-style: none;
   margin: 0 auto;
   padding: 30px 0 0;
@@ -86,39 +86,10 @@
     gap: 20px 0;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: 0;
-    width: 33%;
-    height: 2px;
-    background-color: $color-crimson;
-    opacity: 0.2;
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    width: 33%;
-    height: 2px;
-    background-color: $color-crimson;
-    opacity: 0.2;
-
-    @include vp-1199 {
-      display: none;
-    }
-  }
 }
 
 .advantages__item {
-  // margin-top: 40px;
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 30px;
@@ -134,11 +105,27 @@
     padding: 0 46px;
   }
 }
+
+.advantages__item:nth-child(-n+2) {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(100% + 23px);
+    right: 0;
+    width: 340px;
+    height: 2px;
+    background-color: $color-crimson;
+    opacity: 0.2;
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
 .advantages__item p {
-  // margin-top: 33px;
-
   display: block;
-
   font-family: $ff-secondary;
   font-weight: 700;
   font-size: 71px;
@@ -165,12 +152,9 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-persian-blue;
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
 
   @include vp-1199 {
     margin-top: -20px;
-
     font-size: 14px;
     line-height: 21px;
   }
@@ -253,7 +237,6 @@
   }
 
   h6 {
-    // margin-top: -10px;
     margin-bottom: 5px;
 
     @include vp-1199 {
@@ -273,6 +256,7 @@
     font-size: 16px;
     line-height: 22.4px;
     color: $color-default-sapphire;
+
     @include vp-767 {
       text-align: center;
     }
@@ -280,14 +264,9 @@
 
   &--space {
 
-    outline: 2px solid rgba(0, 0, 0, 0.8);
-    outline-offset: -2px;
     @include vp-767 {
       h6 {
         margin: 0;
-      }
-      p {
-        // margin: 5px 0 0px;
       }
     }
   }
@@ -295,6 +274,7 @@
 
   &--gyms {
     margin-top: 0;
+
     h6 {
       padding: 0;
       margin: -16px 0 32px;
@@ -313,6 +293,7 @@
         margin: -18px 0 9px;
       }
     }
+
     P {
       font-family: $ff-secondary;
       font-weight: 400;

@@ -2848,6 +2848,7 @@ button,
   padding: 0;
   list-style: none;
 }
+
 .super-games__item {
   margin: 0;
   padding: 0;
@@ -2877,6 +2878,7 @@ button,
     line-height: 18px;
   }
 }
+
 .super-games__item p {
   position: relative;
   display: -ms-grid;
@@ -3008,6 +3010,7 @@ button,
 .super-games__button:active {
   color: #102654;
 }
+
 .coaches {
   position: relative;
 }
@@ -3438,7 +3441,6 @@ img {
 }
 
 .advantages__list {
-  position: relative;
   list-style: none;
   margin: 0 auto;
   padding: 30px 0 0;
@@ -3464,38 +3466,9 @@ img {
     gap: 20px 0;
   }
 }
-.advantages__list::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 0;
-  width: 33%;
-  height: 2px;
-  background-color: #d10a42;
-  opacity: 0.2;
-}
-@media (max-width: 1199px) {
-  .advantages__list::before {
-    display: none;
-  }
-}
-.advantages__list::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  width: 33%;
-  height: 2px;
-  background-color: #d10a42;
-  opacity: 0.2;
-}
-@media (max-width: 1199px) {
-  .advantages__list::after {
-    display: none;
-  }
-}
 
 .advantages__item {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -3513,6 +3486,25 @@ img {
     display: block;
     text-align: center;
     padding: 0 46px;
+  }
+}
+
+.advantages__item:nth-child(-n+2) {
+  position: relative;
+}
+.advantages__item:nth-child(-n+2)::before {
+  position: absolute;
+  content: "";
+  top: calc(100% + 23px);
+  right: 0;
+  width: 340px;
+  height: 2px;
+  background-color: #d10a42;
+  opacity: 0.2;
+}
+@media (max-width: 1199px) {
+  .advantages__item:nth-child(-n+2)::before {
+    display: none;
   }
 }
 
@@ -3545,8 +3537,6 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: #2e35ac;
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
 }
 @media (max-width: 1199px) {
   .advantages__item span {
@@ -3682,10 +3672,6 @@ img {
     text-align: center;
   }
 }
-.advantages__description--space {
-  outline: 2px solid rgba(0, 0, 0, 0.8);
-  outline-offset: -2px;
-}
 @media (max-width: 767px) {
   .advantages__description--space h6 {
     margin: 0;
@@ -3780,7 +3766,7 @@ img {
 .promo h2 {
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   font-family: "alumni-sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;

@@ -18,7 +18,6 @@
   display: flex;
   max-height: 500px;
 
-
   @include vp-1199 {
     min-height: 292px;
   }
@@ -39,6 +38,7 @@
   padding: 86px 78px;
   background-color: $color-torch-red;
   color: $color-default-white;
+
   @include vp-1199 {
     padding: 51px 45px;
     width: 292px;
@@ -70,7 +70,6 @@
 }
 
 .super-games__info p {
-
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   padding: 0;
@@ -97,15 +96,11 @@
   padding: 0;
   list-style: none;
 
-  @include vp-1199 {}
-
-  @include vp-767 {}
 }
 
 .super-games__item {
   margin: 0;
   padding: 0;
-
 
   @include vp-1199 {
     margin-top: -8px;
@@ -119,7 +114,6 @@
 }
 
 .super-games__item span {
-
   font-family: $ff-secondary;
   font-weight: 400;
   font-size: 18px;
@@ -127,18 +121,16 @@
   letter-spacing: 0.1px;
 
   @include vp-1199 {
-
     font-size: 12px;
     line-height: 18px;
 
   }
 
-  @include vp-767 {}
+
 }
 
 
 .super-games__item p {
-
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
@@ -164,10 +156,7 @@
     }
   }
 
-
-
   @include vp-1199 {
-
     font-size: 24px;
     line-height: 36px;
   }
@@ -195,7 +184,6 @@
 
   @include vp-1199 {
     margin-left: -15px;
-
     margin-bottom: 5px;
     font-family: $ff-secondary;
     font-weight: 400;
@@ -219,6 +207,7 @@
     width: 88px;
     height: 1px;
     background-color: $color-default-white;
+
     @include vp-1199 {
       width: 56px;
     }
@@ -265,7 +254,5 @@
   &:active {
     color: $color-default-sapphire;
   }
-  @include vp-1199 {}
 
-  @include vp-767 {}
 }
