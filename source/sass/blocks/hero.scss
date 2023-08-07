@@ -110,7 +110,6 @@
 
   @include vp-767 {
     margin: -5px 10px 24px -10px;
-
   }
 }
 
@@ -130,19 +129,12 @@
 
   @include vp-1199 {
     padding: 56px 16px 0 0;
-
   }
 
   @include vp-767 {
     padding: 0;
     padding-top: 15px;
   }
-}
-
-.hero__item {
-  @include vp-1199 {}
-
-  @include vp-767 {}
 }
 
 .hero__button {
@@ -158,7 +150,6 @@
 
 
   font-family: $ff-secondary;
-  color: inherit;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -174,13 +165,11 @@
     max-width: 183px;
     margin-top: -3px;
     padding: 21px 31px;
-
   }
 
   @include vp-767 {
     min-width: 290px;
     grid-column: 1 / 3;
-
   }
 
   &:hover,
@@ -198,7 +187,6 @@
 .hero__image {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  @include vp-1199 {}
 
   @include vp-767 {
     display: none;

@@ -108,7 +108,6 @@
 }
 
 .promo__description {
-
   h4 {
     padding: 0;
     margin: 0;
@@ -154,6 +153,7 @@
     color: $color-resolution-blue;
     display: flex;
     flex-direction: column;
+
     @include vp-1199 {
       padding: 15px 25px 30px 27px;
     }
@@ -163,12 +163,14 @@
       text-align: center;
       padding: 30px 40px 40px 27px;
     }
+
     h4 {
       display: inline-block;
-
     }
+
     p {
       display: block;
+
       @include vp-767 {
         margin-bottom: 25px;
       }
@@ -211,7 +213,6 @@
     color: $color-default-white;
     opacity: 1;
   }
-
 }
 
 .promo__photo {
@@ -252,8 +253,6 @@
       grid-column: 1 / 2;
       grid-row: 3 / 4;
     }
-
-    @include vp-767 {}
   }
 
   &--discount {
@@ -264,8 +263,6 @@
       grid-column: 2 / 3;
       grid-row: 3 / 4;
     }
-
-    @include vp-767 {}
   }
 
   h4 {
