@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 64px 15px 70px;
+    padding: 67px 15px 70px;
   }
 
   h2 {
@@ -108,17 +108,6 @@
 }
 
 .promo__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 36px 45px 44px;
-
-  width: 279px;
-
-  @include vp-767 {
-    width: 290px;
-    text-align: center;
-  }
 
   h4 {
     padding: 0;
@@ -135,19 +124,51 @@
     margin: 0;
   }
 
-  &--secondary {
+  &--primary {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 45px 44px;
+    width: 279px;
+    color: $color-default-white;
+
+    @include vp-767 {
+      width: 290px;
+      text-align: center;
+    }
+
+    span {
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include vp-767 {
+        margin-bottom: 27px;
+      }
+    }
+  }
+
+  &--secondary,
+  &--tertiary {
     height: 100%;
     padding: 15px 35px 25px 25px;
-
+    color: $color-resolution-blue;
+    display: flex;
+    flex-direction: column;
     @include vp-1199 {
       padding: 15px 25px 30px 27px;
     }
 
     @include vp-767 {
-      padding: 25px 45px 35px 27px;
+      width: 290px;
+      text-align: center;
+      padding: 30px 40px 40px 27px;
     }
+    h4 {
+      display: inline-block;
 
+    }
     p {
+      display: block;
       @include vp-767 {
         margin-bottom: 25px;
       }
@@ -155,71 +176,42 @@
   }
 }
 
-.promo__description-primary {
-  color: $color-default-white;
-
-  span {
-    margin-bottom: 20px;
-  }
-
-  p {
-    @include vp-767 {
-      margin-bottom: 25px;
-    }
-  }
-}
-
-.promo__description-secondary {
-  color: $color-resolution-blue;
-
-  h4 {
-    display: inline-block;
-  }
-
-  p {
-    display: block;
-  }
-}
-
 .promo__link {
+  display: inline-block;
   padding: 0;
   margin: 0;
+  margin-top: auto;
+  font-family: $ff-secondary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 1.5px;
+  text-decoration: 1px underline;
+  text-underline-offset: 5px;
+  text-transform: uppercase;
+  color: $color-default-white;
 
-  a {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    font-family: $ff-secondary;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.41px;
-    letter-spacing: 1.5px;
+  &:hover {
     text-decoration: 1px underline;
     text-underline-offset: 5px;
-    text-transform: uppercase;
     color: $color-default-white;
-
-    &:hover {
-      text-decoration: 1px underline;
-      text-underline-offset: 5px;
-      color: $color-default-white;
-      opacity: 0.8;
-    }
-
-    &:focus-visible {
-      outline: 1px solid $color-default-white;
-      outline-offset: 5px;
-      text-decoration: none;
-    }
-
-    &:active {
-      outline: none;
-      text-decoration: 1px underline;
-      text-underline-offset: 5px;
-      color: $color-default-white;
-      opacity: 1;
-    }
+    opacity: 0.8;
   }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+    text-decoration: none;
+  }
+
+  &:active {
+    outline: none;
+    text-decoration: 1px underline;
+    text-underline-offset: 5px;
+    color: $color-default-white;
+    opacity: 1;
+  }
+
 }
 
 .promo__photo {
@@ -231,7 +223,6 @@
 
   @include vp-1199 {
     max-width: 399px;
-
     max-height: 462px;
   }
 
@@ -250,13 +241,32 @@
   border: 7px solid $color-smalt;
   border-image: $torch-crimson-to-smalt;
   border-image-slice: 1;
-}
 
-.promo__box-description {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  &--free {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    @include vp-1199 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    @include vp-767 {}
+  }
+
+  &--discount {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    @include vp-1199 {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    @include vp-767 {}
+  }
 
   h4 {
     font-family: $ff-secondary;
@@ -273,15 +283,11 @@
   }
 
   a {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+
     font-family: $ff-secondary;
     font-weight: 700;
     font-size: 12px;
     line-height: 14.06px;
-    text-decoration: 1px underline;
-    text-underline-offset: 5px;
     color: $color-default-sapphire;
 
     &:hover {
