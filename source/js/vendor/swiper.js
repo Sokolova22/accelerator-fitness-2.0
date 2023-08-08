@@ -15,8 +15,8 @@ const swiper = () => {
     typeof exports === 'object' && typeof module !== 'undefined'
       ? (module.exports = factory())
       : typeof define === 'function' && define.amd
-      ? define(factory)
-      : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self), (global.Swiper = factory()));
+        ? define(factory)
+        : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self), (global.Swiper = factory()));
   })(this, function () {
 
     'use strict';
@@ -50,12 +50,12 @@ const swiper = () => {
     const ssrDocument = {
       body: {},
 
-      addEventListener() {},
+      addEventListener() { },
 
-      removeEventListener() {},
+      removeEventListener() { },
 
       activeElement: {
-        blur() {},
+        blur() { },
 
         nodeName: '',
       },
@@ -74,7 +74,7 @@ const swiper = () => {
 
       createEvent() {
         return {
-          initEvent() {},
+          initEvent() { },
         };
       },
 
@@ -84,7 +84,7 @@ const swiper = () => {
           childNodes: [],
           style: {},
 
-          setAttribute() {},
+          setAttribute() { },
 
           getElementsByTagName() {
             return [];
@@ -134,21 +134,21 @@ const swiper = () => {
         search: '',
       },
       history: {
-        replaceState() {},
+        replaceState() { },
 
-        pushState() {},
+        pushState() { },
 
-        go() {},
+        go() { },
 
-        back() {},
+        back() { },
       },
       CustomEvent: function CustomEvent() {
         return this;
       },
 
-      addEventListener() {},
+      addEventListener() { },
 
-      removeEventListener() {},
+      removeEventListener() { },
 
       getComputedStyle() {
         return {
@@ -158,15 +158,15 @@ const swiper = () => {
         };
       },
 
-      Image() {},
+      Image() { },
 
-      Date() {},
+      Date() { },
 
       screen: {},
 
-      setTimeout() {},
+      setTimeout() { },
 
-      clearTimeout() {},
+      clearTimeout() { },
 
       matchMedia() {
         return {};
@@ -1633,8 +1633,8 @@ const swiper = () => {
 
       function getDirectionLabel(property) {
         if (swiper.isHorizontal()) {
-        return property;
-      } // prettier-ignore
+          return property;
+        } // prettier-ignore
 
         return {
           width: 'height',
@@ -3624,7 +3624,7 @@ const swiper = () => {
 
     let dummyEventAttached = false;
 
-    function dummyEventListener() {}
+    function dummyEventListener() { }
 
     const events = (swiper, method) => {
       const document = getDocument();
@@ -3641,9 +3641,9 @@ const swiper = () => {
         const passiveListener =
           touchEvents.start === 'touchstart' && support.passiveListener && params.passiveListeners
             ? {
-                passive: true,
-                capture: false,
-              }
+              passive: true,
+              capture: false,
+            }
             : false;
         el[domMethod](touchEvents.start, swiper.onTouchStart, passiveListener);
         el[domMethod](
@@ -3651,9 +3651,9 @@ const swiper = () => {
           swiper.onTouchMove,
           support.passiveListener
             ? {
-                passive: false,
-                capture,
-              }
+              passive: false,
+              capture,
+            }
             : capture,
         );
         el[domMethod](touchEvents.end, swiper.onTouchEnd, passiveListener);
@@ -3843,13 +3843,13 @@ const swiper = () => {
     function addClasses() {
       const swiper = this;
       const {
-      classNames,
-      params,
-      rtl,
-      $el,
-      device,
-      support
-    } = swiper; // prettier-ignore
+        classNames,
+        params,
+        rtl,
+        $el,
+        device,
+        support
+      } = swiper; // prettier-ignore
 
       const suffixes = prepareClasses(
         [
@@ -5891,7 +5891,7 @@ const swiper = () => {
         const {bulletActiveClass} = swiper.params.pagination;
         $bulletEl[position]()
           .addClass(`${bulletActiveClass}-${position}`)
-          [position]()
+        [position]()
           .addClass(`${bulletActiveClass}-${position}-${position}`);
       }
 
@@ -6497,16 +6497,16 @@ const swiper = () => {
         const activeListener =
           support.passiveListener && params.passiveListeners
             ? {
-                passive: false,
-                capture: false,
-              }
+              passive: false,
+              capture: false,
+            }
             : false;
         const passiveListener =
           support.passiveListener && params.passiveListeners
             ? {
-                passive: true,
-                capture: false,
-              }
+              passive: true,
+              capture: false,
+            }
             : false;
         if (!target) return;
         const eventMethod = method === 'on' ? 'addEventListener' : 'removeEventListener';
@@ -7227,15 +7227,15 @@ const swiper = () => {
         const passiveListener =
           swiper.touchEvents.start === 'touchstart' && support.passiveListener && swiper.params.passiveListeners
             ? {
-                passive: true,
-                capture: false,
-              }
+              passive: true,
+              capture: false,
+            }
             : false;
         const activeListenerWithCapture = support.passiveListener
           ? {
-              passive: false,
-              capture: true,
-            }
+            passive: false,
+            capture: true,
+          }
           : true;
         return {
           passiveListener,
@@ -7580,9 +7580,9 @@ const swiper = () => {
         const passiveListener =
           swiper.touchEvents.start === 'touchstart' && swiper.support.passiveListener && swiper.params.passiveListeners
             ? {
-                passive: true,
-                capture: false,
-              }
+              passive: true,
+              capture: false,
+            }
             : false;
 
         if (inView) {
@@ -9557,9 +9557,8 @@ const swiper = () => {
             tx = 0;
           }
 
-          const transform = `rotateX(${isHorizontal ? 0 : -slideAngle}deg) rotateY(${
-            isHorizontal ? slideAngle : 0
-          }deg) translate3d(${tx}px, ${ty}px, ${tz}px)`;
+          const transform = `rotateX(${isHorizontal ? 0 : -slideAngle}deg) rotateY(${isHorizontal ? slideAngle : 0
+            }deg) translate3d(${tx}px, ${ty}px, ${tz}px)`;
 
           if (progress <= 1 && progress > -1) {
             wrapperRotate = slideIndex * 90 + progress * 90;
@@ -9600,8 +9599,7 @@ const swiper = () => {
         if (params.shadow) {
           if (isHorizontal) {
             $cubeShadowEl.transform(
-              `translate3d(0px, ${swiperWidth / 2 + params.shadowOffset}px, ${
-                -swiperWidth / 2
+              `translate3d(0px, ${swiperWidth / 2 + params.shadowOffset}px, ${-swiperWidth / 2
               }px) rotateX(90deg) rotateZ(0deg) scale(${params.shadowScale})`,
             );
           } else {
@@ -9612,8 +9610,7 @@ const swiper = () => {
             const scale2 = params.shadowScale / multiplier;
             const offset = params.shadowOffset;
             $cubeShadowEl.transform(
-              `scale3d(${scale1}, 1, ${scale2}) translate3d(0px, ${swiperHeight / 2 + offset}px, ${
-                -swiperHeight / 2 / scale2
+              `scale3d(${scale1}, 1, ${scale2}) translate3d(0px, ${swiperHeight / 2 + offset}px, ${-swiperHeight / 2 / scale2
               }px) rotateX(-90deg)`,
             );
           }
@@ -9621,8 +9618,7 @@ const swiper = () => {
 
         const zFactor = browser.isSafari || browser.isWebView ? -swiperSize / 2 : 0;
         $wrapperEl.transform(
-          `translate3d(0px,0,${zFactor}px) rotateX(${swiper.isHorizontal() ? 0 : wrapperRotate}deg) rotateY(${
-            swiper.isHorizontal() ? -wrapperRotate : 0
+          `translate3d(0px,0,${zFactor}px) rotateX(${swiper.isHorizontal() ? 0 : wrapperRotate}deg) rotateY(${swiper.isHorizontal() ? -wrapperRotate : 0
           }deg)`,
         );
       };

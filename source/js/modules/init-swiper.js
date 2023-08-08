@@ -1,6 +1,6 @@
-// import {Swiper} from './modules/swiper';
+import Swiper from '../vendor/swiper';
 
-export const swiper = new Swiper('.coaches__swiper', {
+export const swiperCoach = new Swiper('.coaches__swiper', {
 
   loop: true,
 
