@@ -80,6 +80,8 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
     padding: 20px 0;
+    cursor: pointer;
+    user-select: none;
 
     @include vp-1199 {
       padding: 19px 0;
@@ -88,6 +90,17 @@
     @include vp-767 {
       width: 100%;
       margin-top: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-egyptian-blue;
+      background-color: $color-default-white;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-default-sapphire;
     }
   }
 }

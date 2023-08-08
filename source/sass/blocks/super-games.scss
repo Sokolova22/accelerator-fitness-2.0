@@ -236,6 +236,7 @@
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;
+  user-select: none;
 
   @include vp-1199 {
     padding: 14px 0;

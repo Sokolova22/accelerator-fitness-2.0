@@ -132,6 +132,7 @@
 .subscription__control {
   position: relative;
   cursor: pointer;
+  user-select: none;
   padding: 0 4px 16px;
   margin: 0;
   opacity: 0.5;
@@ -311,6 +312,7 @@
     color: $color-default-sapphire;
     background-color: transparent;
     border: 2px solid $color-resolution-blue;
+    user-select: none;
 
     &:hover,
     &:focus-visible {

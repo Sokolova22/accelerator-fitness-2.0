@@ -156,6 +156,7 @@
   grid-row: 1/4;
   min-width: 660px;
   max-height: 401px;
+  background-color: $color-link-water;
 
   @include vp-1199 {
     margin: 0 auto;
@@ -170,7 +171,6 @@
   }
 
   img {
-    background-color: $color-link-water;
     width: 100%;
     padding: 0;
   }
