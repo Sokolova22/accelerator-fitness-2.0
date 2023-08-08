@@ -249,3 +249,19 @@
     color: $color-default-sapphire;
   }
 }
+
+.super-games__image {
+  max-width: 660px;
+
+  @include vp-1199 {
+    max-width: 386px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
+
+  img {
+    height: 100%;
+  }
+}

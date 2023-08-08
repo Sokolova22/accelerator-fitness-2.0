@@ -3003,6 +3003,23 @@ button,
   color: #102654;
 }
 
+.super-games__image {
+  max-width: 660px;
+}
+@media (max-width: 1199px) {
+  .super-games__image {
+    max-width: 386px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__image {
+    max-width: 290px;
+  }
+}
+.super-games__image img {
+  height: 100%;
+}
+
 .coaches {
   position: relative;
 }
