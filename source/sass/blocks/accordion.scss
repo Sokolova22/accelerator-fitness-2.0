@@ -74,7 +74,7 @@
 
 .accordion__element--tab7 {
   h4 {
-    padding: 32px 60px 34px 0;
+    padding: 38px 60px 34px 0;
 
     @include vp-1199 {
       padding: 36px 60px 20px 0;
@@ -84,7 +84,7 @@
 
 .accordion__element--tab8 {
   h4 {
-    padding: 40px 60px 34px 0;
+    padding: 34px 60px 32px 0;
 
     @include vp-1199 {
       padding: 36px 60px 45px 0;
@@ -128,6 +128,7 @@
   transform: translate(0, -50%);
   border: none;
   cursor: pointer;
+  border-radius: 50%;
 
   @include hover-focus {
     background: url("../img/sprite/icon-open-hf.svg") no-repeat;

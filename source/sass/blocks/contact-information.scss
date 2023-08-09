@@ -1,6 +1,6 @@
 .contact-information {
   color: $color-default-sapphire;
-  padding: 46px 159px 70px 120px;
+  padding: 46px 159px 70px 122px;
   max-height: 337px;
   flex-grow: 2;
   border-top: 1px solid $color-light-slate-grey;
@@ -89,7 +89,7 @@
   h6 {
     padding: 0;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     font-family: $ff-secondary;
     font-weight: 700;
     font-size: 16px;
@@ -149,7 +149,7 @@
 }
 
 .contact-information__box:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 
   @include vp-1199 {
     margin-bottom: 25px;

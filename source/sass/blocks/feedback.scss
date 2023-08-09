@@ -1,7 +1,7 @@
 .feedback__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 115px 103px 120px;
+  padding: 138px 103px 120px;
   max-width: 1366px;
   width: 100%;
 
@@ -162,6 +162,7 @@
   cursor: pointer;
 
   &--prev {
+    top: calc(71% - 66px);
     left: calc((100% - 560px) / 2 - 76px);
     transform: translate(0, -50%);
     background-image: url("../img/sprite/icon-arrow-prev.svg");
@@ -192,7 +193,7 @@
   }
 
   &--next {
-    top: calc(58.5% - 56px);
+    top: calc(62% - 66px);
     right: calc((100% - 560px) / 2 - 76px);
     transform: translate(0, -50%);
     rotate: 180deg;
