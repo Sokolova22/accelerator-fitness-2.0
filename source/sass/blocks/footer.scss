@@ -12,13 +12,13 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 45px 45px 44px 45px;
+    padding: 46px 45px 44px 45px;
   }
 
   @include vp-767 {
     display: block;
     gap: 28px;
-    padding: 54px 15px 55px;
+    padding: 52px 15px 55px;
     column-count: 2;
   }
 }
@@ -39,7 +39,7 @@
     background-color: transparent;
 
     @include vp-1199 {
-      margin-top: -6px;
+      margin-top: -2px;
       width: 82px;
     }
 
