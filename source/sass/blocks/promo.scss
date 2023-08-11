@@ -2,7 +2,7 @@
   padding: 136px 103px 120px;
 
   @include vp-1199 {
-    padding: 95px 45px 100px;
+    padding: 95px 45px 97px;
   }
 
   @include vp-767 {
@@ -137,7 +137,7 @@
     }
 
     span {
-      margin-bottom: 20px;
+      margin-bottom: 23px;
 
       @include vp-1199 {
         margin-bottom: 24px;
@@ -155,23 +155,22 @@
       }
     }
   }
-
+  //
   &--secondary,
   &--tertiary {
     height: 100%;
-    padding: 15px 35px 25px 25px;
+    padding: 16px 35px 30px 28px;
     color: $color-resolution-blue;
     display: flex;
     flex-direction: column;
 
     @include vp-1199 {
-      padding: 18px 25px 34px 27px;
+      padding: 16px 25px 37px 27px;
     }
 
     @include vp-767 {
-      width: 290px;
       text-align: center;
-      padding: 28px 40px 40px 27px;
+      padding: 26px 40px 40px 41px;
     }
 
     h4 {
@@ -182,16 +181,15 @@
       display: block;
 
       @include vp-767 {
-        margin-bottom: 25px;
+        margin-bottom: 27px;
       }
     }
   }
 }
 
 .promo__link {
-  display: inline-block;
+  width: max-content;
   padding: 0;
-  margin: 0;
   margin-top: auto;
   font-family: $ff-secondary;
   font-weight: 700;

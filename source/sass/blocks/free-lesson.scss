@@ -1,33 +1,31 @@
 .free-lesson {
   width: 50%;
-  padding: 56px 170px 50px 105px;
+
+
   background-color: $color-default-sapphire;
   color: $color-default-white;
   max-height: 337px;
 
   @include vp-1199 {
     width: 100%;
-    margin: 0;
-    padding: 62px 163px 68px 133px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
     max-height: 386px;
-    padding: 65px 15px 70px 15px;
   }
 
   h2 {
-    padding: 0;
-    margin: 0;
-    margin-left: -25px;
-    margin-bottom: 19px;
+    max-width: 683px;
+    padding: 0 0 0 105px;
+    margin: 57px 0 21px auto;
     font-family: $ff-primary;
     font-weight: 600;
     font-size: 54px;
     line-height: 81.24px;
     letter-spacing: 2.2px;
     -webkit-text-stroke-width: 2px;
-    text-align: center;
+    text-align: left;
 
     @include vp-1199 {
       font-size: 42px;
@@ -35,12 +33,13 @@
       letter-spacing: 1.5px;
       -webkit-text-stroke-width: 0;
       text-align: left;
-      margin-left: 0;
-      margin-bottom: 36px;
+      margin: 62px auto 27px 0;
+      padding: 0 0 0 132px;
     }
 
     @include vp-767 {
-      margin-bottom: 28px;
+      margin: 65px auto 28px 0;
+      padding: 0 0 0 15px;
       font-size: 32px;
       line-height: 38.4px;
       letter-spacing: 1px;
@@ -50,17 +49,30 @@
 
 .free-lesson__wrapper {
   width: 100%;
+  max-width: 683px;
+  padding: 0 170px 0 105px;
   margin-top: -10px;
+  margin-bottom: 70px;
+
   display: grid;
+  margin-left: auto;
+
   grid-template-columns: auto auto;
   grid-template-rows: repeat(2, auto);
   gap: 30px 30px;
 
   @include vp-1199 {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 68px;
+    padding: 0 163px 0 133px;
+
     column-gap: 60px;
   }
 
   @include vp-767 {
+    padding: 0 15px 0 15px;
+
     gap: 0;
     margin-top: 0;
     display: flex;
@@ -80,7 +92,7 @@
     line-height: 16.41px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    padding: 13px 160px;
+    padding: 15px 160px;
     cursor: pointer;
     user-select: none;
 
@@ -90,7 +102,7 @@
 
     @include vp-767 {
       width: 100%;
-      margin-top: 15px;
+      margin-top: 12px;
       padding: 16px 0;
     }
 
@@ -114,7 +126,7 @@
 
   input {
     position: relative;
-    padding: 13px 10px 9px 0;
+    padding: 13px 10px 6px 0;
     color: $color-default-white;
     background-color: transparent;
     border: none;
@@ -130,6 +142,10 @@
 
     @include vp-1199 {
       padding: 13px 10px 3px 0;
+    }
+
+    @include vp-767 {
+      padding: 11px 10px 5px 0;
     }
   }
 

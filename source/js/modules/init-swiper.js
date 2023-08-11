@@ -17,6 +17,10 @@ export const swiperCoach = new Swiper('.coaches__swiper', {
 
     1200: {
       slidesPerView: 4,
+      spaceBetween: 5,
+    },
+    1360: {
+      slidesPerView: 4,
       spaceBetween: 40,
     },
   },

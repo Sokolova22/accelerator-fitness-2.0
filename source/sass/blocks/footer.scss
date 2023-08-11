@@ -1,15 +1,19 @@
 .footer {
+  width: 100%;
+  background-color: $color-black-russian;
+  color: $color-default-white;
+}
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 auto;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 42px 104px 42px 103px;
   width: 100%;
   max-width: 1366px;
-  padding: 39px 104px 42px 103px;
-  background-color: $color-black-russian;
-  color: $color-default-white;
 
   @include vp-1199 {
     padding: 46px 45px 44px 45px;
@@ -18,7 +22,7 @@
   @include vp-767 {
     display: block;
     gap: 28px;
-    padding: 52px 15px 55px;
+    padding: 50px 16px 55px;
     column-count: 2;
   }
 }

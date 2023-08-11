@@ -1,10 +1,20 @@
 .contacts {
   margin: 0 auto;
+  // outline: 2px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -2px;
   display: flex;
-  width: 100%;
-  max-width: 1366px;
+  // align-items: center;
+  // justify-content: center;
+  flex: 0 0 auto;
+  // width: 100%;
+  // max-width: 100%;
 
   @include vp-1199 {
     flex-wrap: wrap;
+    // max-width: 767px;
+  }
+
+  @include vp-767 {
+    // max-width: 320px;
   }
 }
