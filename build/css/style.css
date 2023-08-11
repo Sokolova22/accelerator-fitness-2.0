@@ -4482,6 +4482,8 @@ button,
 
   .advantages__item--gyms p {
     margin-top: -10px;
+    font-size: 74px;
+    line-height: 111px;
   }
 
   .advantages__description {
@@ -5225,6 +5227,11 @@ button,
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+  }
+
+  .advantages__item--gyms p {
+    font-size: 74px;
+    line-height: 111px;
   }
 
   .advantages__description h6 {
