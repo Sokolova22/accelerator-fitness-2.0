@@ -123,6 +123,12 @@
     margin: 0;
   }
 
+  a {
+    @include vp-767 {
+      margin: 0 auto;
+    }
+  }
+
   &--primary {
     display: flex;
     flex-direction: column;
@@ -144,7 +150,6 @@
       }
 
       @include vp-767 {
-
         margin-bottom: 20px;
       }
     }
@@ -155,7 +160,7 @@
       }
     }
   }
-  //
+
   &--secondary,
   &--tertiary {
     height: 100%;

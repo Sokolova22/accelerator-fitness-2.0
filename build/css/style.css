@@ -4503,7 +4503,7 @@ button,
   }
 
   .advantages__description--gyms h6 {
-    margin: -12px 0 12px;
+    margin: -15px 0 12px;
     font-size: 22px;
     line-height: 30px;
   }
@@ -4665,6 +4665,10 @@ button,
     padding-right: 160px;
   }
 
+  .accordion__wrapper p {
+    margin-top: 17px;
+  }
+
   .feedback__wrapper {
     padding: 90px 45px 100px;
   }
@@ -4713,8 +4717,8 @@ button,
     letter-spacing: 1.5px;
     -webkit-text-stroke-width: 0;
     text-align: left;
-    margin: 62px auto 27px 0;
-    padding: 0 0 0 132px;
+    margin: 62px auto 26px 0;
+    padding: 0 0 0 133px;
   }
 
   .free-lesson__wrapper {
@@ -5324,6 +5328,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .promo__description a {
+    margin: 0 auto;
   }
 
   .promo__description--primary {
