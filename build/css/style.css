@@ -4503,7 +4503,7 @@ button,
   }
 
   .advantages__description--gyms h6 {
-    margin: -15px 0 12px;
+    margin: -19px 0 12px;
     font-size: 22px;
     line-height: 30px;
   }
@@ -4670,11 +4670,11 @@ button,
   }
 
   .feedback__wrapper {
-    padding: 90px 45px 100px;
+    padding: 95px 45px 100px;
   }
 
   .feedback__wrapper h2 {
-    margin-bottom: 43px;
+    margin-bottom: 42px;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 1.2px;
