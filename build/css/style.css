@@ -4253,6 +4253,9 @@ button,
   }
 
   .subscription::after {
+    position: absolute;
+    z-index: 2;
+    content: "";
     top: calc(100% - 351px);
     left: calc(100% - 347px);
     width: 347px;
@@ -5012,6 +5015,7 @@ button,
   }
 
   .subscription__element-wrapper:not(:last-child) {
+    margin: 0 auto;
     margin-bottom: 34px;
   }
 

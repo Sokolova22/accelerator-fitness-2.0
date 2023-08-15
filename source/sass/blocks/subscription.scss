@@ -38,6 +38,9 @@
     }
 
     @include vp-1199 {
+      position: absolute;
+      z-index: 2;
+      content: "";
       top: calc(100% - 351px);
       left: calc(100% - 347px);
       width: 347px;
@@ -267,6 +270,8 @@
   }
 
   @include vp-767 {
+
+
     padding: 51px 42px;
     width: 100%;
     min-height: 384px;
@@ -282,6 +287,7 @@
     }
 
     @include vp-767 {
+      margin: 0 auto;
       margin-bottom: 34px;
     }
   }
