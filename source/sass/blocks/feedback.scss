@@ -6,12 +6,17 @@
   width: 100%;
 
   @include vp-1199 {
+    max-width: 768px;
     padding: 95px 45px 100px;
   }
 
   @include vp-767 {
-    padding: 66px 15px 69px;
+    max-width: 700px;
+    padding: 66px 45px 69px;
   }
+  // @include vp-374 {
+  //   padding: 66px 15px 69px;
+  // }
 
   h2 {
     padding: 0;
@@ -41,14 +46,15 @@
 }
 
 .feedback__swiper {
+  margin: 0 auto;
   width: 560px;
 
   @include vp-1199 {
-    width: 566px;
+    max-width: 566px;
   }
 
   @include vp-767 {
-    width: 226px;
+    width: 100%;
   }
 }
 
@@ -64,12 +70,15 @@
   padding: 56px 55px 58px 62px;
   background-color: $color-resolution-blue;
   filter: drop-shadow(0 0 40 $color-resolution-blue);
+  min-height: 242px;
 
   @include vp-1199 {
     padding: 55px 55px 58px 65px;
   }
 
   @include vp-767 {
+    width: 100%;
+    min-height: 335px;
     padding: 48px 17px 33px;
   }
 
@@ -116,6 +125,14 @@
   background-color: $color-bright-grey;
 
   @include vp-767 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 25px;
+    left: 41px;
+  }
+
+  @include vp-374 {
     position: absolute;
     width: 68px;
     height: 68px;

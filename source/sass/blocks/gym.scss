@@ -157,6 +157,19 @@
 
 .gym__box {
   position: relative;
+  max-width: 660px;
+  max-height: 401px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    max-width: 678px;
+    max-height: 345px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-height: 100%;
+  }
 }
 
 .gym__image {
@@ -203,19 +216,25 @@
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    min-width: 320px;
-    height: 167px;
+    max-width: 100%;
   }
 }
 
 .gym__video {
   object-fit: cover;
   margin: 0 auto;
-  height: 228px;
+  max-width: 364px;
+  max-height: 228px;
 
   @include vp-1199 {
-    width: 320px;
+    // min-width: 266px;
+    width: 100%;
     height: 167px;
+  }
+
+  @include vp-767 {
+    max-width: 678px;
+    max-height: 167px;
   }
 }
 

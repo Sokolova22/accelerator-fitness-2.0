@@ -6,10 +6,11 @@
 
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   flex-wrap: wrap;
   flex: 0 0 auto;
   width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 30px 103px;
   background-color: transparent;
@@ -42,6 +43,7 @@
 .header__logo {
   padding-top: 11px;
   width: 122px;
+  margin-right: auto;
 
   &:hover {
     opacity: 0.8;
@@ -75,6 +77,8 @@
 }
 
 .header__phone {
+  display: inline-block;
+  margin-left: auto;
   color: $color-default-white;
 
   &:hover {

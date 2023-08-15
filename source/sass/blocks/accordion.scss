@@ -17,7 +17,7 @@
     letter-spacing: 0.1px;
 
     @include vp-1199 {
-      padding: 32px 60px 31px 0;
+      padding: 29px 60px 31px 0;
     }
 
     @include vp-767 {
@@ -145,18 +145,23 @@
   }
 
   @include vp-1199 {
+    top: 42px;
+
     &--tab4 {
       top: 54px;
     }
   }
 
   @include vp-767 {
-    top: 51px;
+    top: 42px;
     right: -6px;
-
     width: 32px;
     height: 32px;
     background-size: 32px 32px;
+
+    &--tab9 {
+      top: 46px;
+    }
 
     &--tab11,
     &--tab12 {
