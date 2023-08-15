@@ -6,16 +6,6 @@
   padding: 120px 35px 89px;
   margin: 0 auto;
 
-  @include vp-1199 {
-    padding: 100px 163px;
-  }
-
-  @include vp-767 {
-    display: flex;
-    justify-content: center;
-    padding: 63px 15px 40px;
-  }
-
   &::after {
     position: absolute;
     z-index: 2;
@@ -37,7 +27,10 @@
       background-position: bottom right;
     }
   }
+
   @include vp-1199 {
+    padding: 100px 163px;
+
     &::after {
       position: absolute;
       z-index: 2;
@@ -61,11 +54,15 @@
   }
 
   @include vp-767 {
+    display: flex;
+    justify-content: center;
+    padding: 63px 15px 40px;
     &::after {
       display: none;
     }
   }
 }
+
 
 .subscription__wrapper {
   position: relative;
@@ -273,8 +270,6 @@
   }
 
   @include vp-767 {
-
-
     padding: 51px 42px;
     width: 100%;
     min-height: 384px;
