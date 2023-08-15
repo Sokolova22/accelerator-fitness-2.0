@@ -2098,22 +2098,6 @@ button,
   margin: 0 auto;
 }
 
-.subscription::after {
-  position: absolute;
-  z-index: 1;
-  content: "";
-  top: 60%;
-  right: -1%;
-  width: 426px;
-  height: 494px;
-  overflow-y: hidden;
-  background-color: transparent;
-  background-image: url("../img/weights.png");
-  background-repeat: no-repeat;
-  background-size: 459px 499px;
-  background-position: bottom 200px right -160px;
-}
-
 .subscription__wrapper {
   position: relative;
   z-index: 2;
@@ -4094,6 +4078,32 @@ button,
   }
 */
 
+@media screen and (min-width: 1200px) {
+  .subscription::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 60%;
+    right: 0%;
+    width: 426px;
+    height: 494px;
+    background-color: transparent;
+    background-image: url("../img/weights.png");
+    background-repeat: no-repeat;
+    background-size: 459px 499px;
+    background-position: bottom right -177px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 1.5dppx) and (min-width: 1200px) {
+  .subscription::after {
+    background-image: url("../img/weights@2x.png");
+    background-repeat: no-repeat;
+    background-size: 459px 499px;
+    background-position: bottom right -177px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .custom-input label input,
   .custom-input label textarea,
@@ -4252,11 +4262,14 @@ button,
   }
 
   .subscription::after {
+    position: absolute;
     z-index: 1;
+    content: "";
     top: 78%;
     right: 0%;
     width: 426px;
     height: 494px;
+    background-image: url("../img/weights.png");
     background-repeat: no-repeat;
     background-size: 428px 446px;
     background-position: bottom right -80px;
@@ -4805,8 +4818,9 @@ button,
   }
 }
 
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .subscription::after {
+    background-image: url("../img/weights@2x.png");
     background-repeat: no-repeat;
     background-size: 428px 446px;
     background-position: bottom right -80px;
@@ -4990,6 +5004,10 @@ button,
   .subscription::after {
     display: none;
     background-image: none;
+  }
+
+  .subscription__wrapper {
+    padding: 0;
   }
 
   .subscription__wrapper h2 {
@@ -5695,14 +5713,5 @@ button,
   .accordion__button:hover:not(.focus-visible) {
     background: url("../img/sprite/icon-open-hf.svg") no-repeat;
     background-size: cover;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .subscription::after {
-    background-image: url("../img/weights@2x.png");
-    background-repeat: no-repeat;
-    background-size: 459px 499px;
-    background-position: bottom right -160px;
   }
 }
