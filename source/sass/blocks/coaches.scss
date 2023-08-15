@@ -79,8 +79,6 @@
 }
 
 .coaches-slide {
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
   position: relative;
   margin: 0 auto;
   cursor: grab;
@@ -176,7 +174,7 @@
   transition: all 0.5s ease;
 
   @include vp-767 {
-    padding: 45px 30px;
+    padding: 43px 20px 26px 25px;
   }
 
   span {
@@ -260,8 +258,10 @@
     }
 
     @include vp-767 {
-      top: 52%;
-      left: -8px;
+      top: 51%;
+      left: 5px;
+      width: 32px;
+      height: 32px;
       background-size: 10px 19px;
     }
 
@@ -277,8 +277,8 @@
       }
 
       @include vp-767 {
-        top: 52%;
-        left: -8px;
+        top: 51%;
+        left: 5px;
         background-size: 32px 32px;
       }
     }
@@ -288,8 +288,8 @@
       background-size: 56px 56px;
 
       @include vp-767 {
-        top: 52%;
-        left: -8px;
+        top: 51%;
+        left: 5px;
         background-size: 32px 32px;
       }
     }
@@ -308,8 +308,10 @@
     }
 
     @include vp-767 {
-      top: calc(52% - 56px);
-      right: -7px;
+      top: calc(51% - 32px);
+      right: 3px;
+      width: 32px;
+      height: 32px;
       background-size: 10px 19px;
     }
 
@@ -327,8 +329,8 @@
       }
 
       @include vp-767 {
-        top: calc(52% - 56px);
-        right: -7px;
+        top: calc(51% - 32px);
+        right: 3px;
         background-size: 32px 32px;
       }
     }
@@ -338,8 +340,8 @@
       background-size: 56px 56px;
 
       @include vp-767 {
-        top: calc(52% - 56px);
-        right: -7px;
+        top: calc(51% - 32px);
+        right: 3px;
         background-size: 32px 32px;
       }
     }

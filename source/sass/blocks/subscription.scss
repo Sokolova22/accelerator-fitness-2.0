@@ -1,13 +1,50 @@
 .subscription {
-
   width: 100%;
   background-color: $color-ghost-white;
   position: relative;
   z-index: 1;
-
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
+  @include vp-767 {
+    display: flex;
+    justify-content: center;
+    padding: 63px 15px 40px;
+  }
+}
+
+.subscription__wrapper {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  padding: 120px 35px 89px;
+
+  @media screen and (min-width: 1367px) {
+    &::after {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      top: 60%;
+      right: 0;
+      width: 426px;
+      height: 494px;
+      background-color: transparent;
+      background-image: url("../img/weights.png");
+      background-repeat: no-repeat;
+      background-size: 459px 499px;
+      background-position: bottom right -44px;
+
+      @media (min-resolution: $retina-dppx) and (min-width: 1200px) {
+        background-image: url("../img/weights@2x.png");
+        background-repeat: no-repeat;
+        background-size: 459px 499px;
+        background-position: bottom right -44px;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) and (min-width: 1200px) {
     &::after {
       position: absolute;
       z-index: 1;
@@ -32,6 +69,8 @@
   }
 
   @include vp-1199 {
+    padding: 100px 0;
+
     &::after {
       position: absolute;
       z-index: 1;
@@ -55,30 +94,12 @@
   }
 
   @include vp-767 {
-    display: flex;
-    justify-content: center;
-    padding: 63px 15px 40px;
+    padding: 0;
 
     &::after {
       display: none;
       background-image: none;
     }
-  }
-}
-
-.subscription__wrapper {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  width: 100%;
-  padding: 120px 35px 89px;
-
-  @include vp-1199 {
-    padding: 100px 0;
-  }
-
-  @include vp-767 {
-    padding: 0;
   }
 
   h2 {
@@ -236,13 +257,14 @@
 }
 
 .subscription__content {
-
+  z-index: 4;
   margin: 0 auto;
   width: 100%;
   transition: height 0.3s;
 }
 
 .subscription__element {
+
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -269,7 +291,7 @@
 
 .subscription__element-wrapper {
   position: relative;
-  z-index: 10;
+  z-index: 4;
   list-style: none;
   padding: 62px 77px;
   max-width: 360px;

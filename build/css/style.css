@@ -2103,6 +2103,7 @@ button,
   z-index: 2;
   margin: 0 auto;
   width: 100%;
+  max-width: 1366px;
   padding: 120px 35px 89px;
 }
 
@@ -2228,6 +2229,7 @@ button,
 }
 
 .subscription__content {
+  z-index: 4;
   margin: 0 auto;
   width: 100%;
   -webkit-transition: height 0.3s;
@@ -2260,7 +2262,7 @@ button,
 
 .subscription__element-wrapper {
   position: relative;
-  z-index: 10;
+  z-index: 4;
   list-style: none;
   padding: 62px 77px;
   max-width: 360px;
@@ -2655,8 +2657,6 @@ button,
 }
 
 .coaches-slide {
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
   position: relative;
   margin: 0 auto;
   cursor: -webkit-grab;
@@ -4078,29 +4078,29 @@ button,
   }
 */
 
-@media screen and (min-width: 1200px) {
-  .subscription::after {
+@media screen and (min-width: 1367px) {
+  .subscription__wrapper::after {
     position: absolute;
     z-index: 1;
     content: "";
     top: 60%;
-    right: 0%;
+    right: 0;
     width: 426px;
     height: 494px;
     background-color: transparent;
     background-image: url("../img/weights.png");
     background-repeat: no-repeat;
     background-size: 459px 499px;
-    background-position: bottom right -177px;
+    background-position: bottom right -44px;
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 1.5dppx) and (min-width: 1200px) {
-  .subscription::after {
+@media screen and (min-width: 1367px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px), screen and (min-width: 1367px) and (min-resolution: 1.5dppx) and (min-width: 1200px) {
+  .subscription__wrapper::after {
     background-image: url("../img/weights@2x.png");
     background-repeat: no-repeat;
     background-size: 459px 499px;
-    background-position: bottom right -177px;
+    background-position: bottom right -44px;
   }
 }
 
@@ -4261,7 +4261,11 @@ button,
     background-size: 73px 73px;
   }
 
-  .subscription::after {
+  .subscription__wrapper {
+    padding: 100px 0;
+  }
+
+  .subscription__wrapper::after {
     position: absolute;
     z-index: 1;
     content: "";
@@ -4273,10 +4277,6 @@ button,
     background-repeat: no-repeat;
     background-size: 428px 446px;
     background-position: bottom right -80px;
-  }
-
-  .subscription__wrapper {
-    padding: 100px 0;
   }
 
   .subscription__wrapper h2 {
@@ -4819,7 +4819,7 @@ button,
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-  .subscription::after {
+  .subscription__wrapper::after {
     background-image: url("../img/weights@2x.png");
     background-repeat: no-repeat;
     background-size: 428px 446px;
@@ -5001,13 +5001,13 @@ button,
     padding: 63px 15px 40px;
   }
 
-  .subscription::after {
-    display: none;
-    background-image: none;
-  }
-
   .subscription__wrapper {
     padding: 0;
+  }
+
+  .subscription__wrapper::after {
+    display: none;
+    background-image: none;
   }
 
   .subscription__wrapper h2 {
@@ -5165,7 +5165,7 @@ button,
   }
 
   .coaches__description {
-    padding: 45px 30px;
+    padding: 43px 20px 26px 25px;
   }
 
   .coaches__description li:not(:last-child) {
@@ -5173,40 +5173,44 @@ button,
   }
 
   .coaches__swiper-button--prev {
-    top: 52%;
-    left: -8px;
+    top: 51%;
+    left: 5px;
+    width: 32px;
+    height: 32px;
     background-size: 10px 19px;
   }
 
   .coaches__swiper-button--prev:hover,
   .coaches__swiper-button--prev:focus {
-    top: 52%;
-    left: -8px;
+    top: 51%;
+    left: 5px;
     background-size: 32px 32px;
   }
 
   .coaches__swiper-button--prev:active {
-    top: 52%;
-    left: -8px;
+    top: 51%;
+    left: 5px;
     background-size: 32px 32px;
   }
 
   .coaches__swiper-button--next {
-    top: calc(52% - 56px);
-    right: -7px;
+    top: calc(51% - 32px);
+    right: 3px;
+    width: 32px;
+    height: 32px;
     background-size: 10px 19px;
   }
 
   .coaches__swiper-button--next:hover,
   .coaches__swiper-button--next:focus {
-    top: calc(52% - 56px);
-    right: -7px;
+    top: calc(51% - 32px);
+    right: 3px;
     background-size: 32px 32px;
   }
 
   .coaches__swiper-button--next:active {
-    top: calc(52% - 56px);
-    right: -7px;
+    top: calc(51% - 32px);
+    right: 3px;
     background-size: 32px 32px;
   }
 
@@ -5680,6 +5684,32 @@ button,
     height: 68px;
     top: 35px;
     left: 41px;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .subscription__wrapper::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 60%;
+    right: 0%;
+    width: 426px;
+    height: 494px;
+    background-color: transparent;
+    background-image: url("../img/weights.png");
+    background-repeat: no-repeat;
+    background-size: 459px 499px;
+    background-position: bottom right -177px;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1200px), (max-width: 1366px) and (min-width: 1200px) and (min-resolution: 1.5dppx) and (min-width: 1200px) {
+  .subscription__wrapper::after {
+    background-image: url("../img/weights@2x.png");
+    background-repeat: no-repeat;
+    background-size: 459px 499px;
+    background-position: bottom right -177px;
   }
 }
 
