@@ -3,72 +3,80 @@
   width: 100%;
   background-color: $color-ghost-white;
   position: relative;
-  padding: 120px 35px 89px;
+  z-index: 1;
+
   margin: 0 auto;
 
   &::after {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     content: "";
-    top: calc(100% - 344px);
-    left: calc(100% - 287px);
-    width: 287px;
+    top: 60%;
+    right: -1%;
+    width: 426px;
     height: 494px;
+    overflow-y: hidden;
     background-color: transparent;
-    background-image: url("../img/weights/weights-desktop.png");
+    background-image: url("../img/weights.png");
     background-repeat: no-repeat;
-    background-size: 287px 494px;
-    background-position: bottom right;
+    background-size: 459px 499px;
+    background-position: bottom 200px right -160px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/weights/weights-desktop@2x.png");
+      background-image: url("../img/weights@2x.png");
       background-repeat: no-repeat;
-      background-size: 287px 494px;
-      background-position: bottom right;
+      background-size: 459px 499px;
+      background-position: bottom right -160px;
     }
-  }
 
-  @include vp-1199 {
-    padding: 100px 163px;
 
-    &::after {
-      position: absolute;
-      z-index: 2;
-      content: "";
-      top: calc(100% - 351px);
-      left: calc(100% - 347px);
-      width: 347px;
-      height: 444px;
-      background-image: url("../img/weights/weights-tablet.png");
+    @include vp-1199 {
+      z-index: 1;
+      top: 78%;
+      right: 0%;
+      width: 426px;
+      height: 494px;
       background-repeat: no-repeat;
-      background-size: 347px 444px;
-      background-position: bottom right;
+      background-size: 428px 446px;
+      background-position: bottom right -80px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/weights/weights-tablet@2x.png");
         background-repeat: no-repeat;
-        background-size: 347px 444px;
-        background-position: bottom right;
+        background-size: 428px 446px;
+        background-position: bottom right -80px;
       }
     }
+
   }
+
 
   @include vp-767 {
     display: flex;
     justify-content: center;
     padding: 63px 15px 40px;
+
     &::after {
       display: none;
+      background-image: none;
     }
+
   }
 }
 
 
+
+
+
 .subscription__wrapper {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   margin: 0 auto;
   width: 100%;
+  padding: 120px 35px 89px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
   // max-width: 1200px;
   h2 {
     padding: 0;
@@ -106,9 +114,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   column-gap: 36px;
 
   @include vp-1199 {
+
     margin-bottom: 36px;
     column-gap: 44px;
   }
@@ -235,6 +245,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   width: 100%;
   font-family: $ff-secondary;
   font-weight: 400;
@@ -245,6 +256,7 @@
 
   @include vp-1199 {
     flex-direction: column;
+    align-items: center;
   }
 
   p {
@@ -254,6 +266,7 @@
 
 .subscription__element-wrapper {
   position: relative;
+  z-index: 10;
   list-style: none;
   padding: 62px 77px;
   max-width: 360px;

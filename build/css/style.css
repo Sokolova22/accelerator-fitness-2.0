@@ -2094,30 +2094,32 @@ button,
   width: 100%;
   background-color: #f8f9fc;
   position: relative;
-  padding: 120px 35px 89px;
+  z-index: 1;
   margin: 0 auto;
 }
 
 .subscription::after {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   content: "";
-  top: calc(100% - 344px);
-  left: calc(100% - 287px);
-  width: 287px;
+  top: 60%;
+  right: -1%;
+  width: 426px;
   height: 494px;
+  overflow-y: hidden;
   background-color: transparent;
-  background-image: url("../img/weights/weights-desktop.png");
+  background-image: url("../img/weights.png");
   background-repeat: no-repeat;
-  background-size: 287px 494px;
-  background-position: bottom right;
+  background-size: 459px 499px;
+  background-position: bottom 200px right -160px;
 }
 
 .subscription__wrapper {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   margin: 0 auto;
   width: 100%;
+  padding: 120px 35px 89px;
 }
 
 .subscription__wrapper h2 {
@@ -2274,6 +2276,7 @@ button,
 
 .subscription__element-wrapper {
   position: relative;
+  z-index: 10;
   list-style: none;
   padding: 62px 77px;
   max-width: 360px;
@@ -4248,22 +4251,19 @@ button,
     background-size: 73px 73px;
   }
 
-  .subscription {
-    padding: 100px 163px;
+  .subscription::after {
+    z-index: 1;
+    top: 78%;
+    right: 0%;
+    width: 426px;
+    height: 494px;
+    background-repeat: no-repeat;
+    background-size: 428px 446px;
+    background-position: bottom right -80px;
   }
 
-  .subscription::after {
-    position: absolute;
-    z-index: 2;
-    content: "";
-    top: calc(100% - 351px);
-    left: calc(100% - 347px);
-    width: 347px;
-    height: 444px;
-    background-image: url("../img/weights/weights-tablet.png");
-    background-repeat: no-repeat;
-    background-size: 347px 444px;
-    background-position: bottom right;
+  .subscription__wrapper {
+    padding: 100px 0;
   }
 
   .subscription__wrapper h2 {
@@ -4293,6 +4293,9 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .subscription__element-wrapper {
@@ -4804,10 +4807,9 @@ button,
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
   .subscription::after {
-    background-image: url("../img/weights/weights-tablet@2x.png");
     background-repeat: no-repeat;
-    background-size: 347px 444px;
-    background-position: bottom right;
+    background-size: 428px 446px;
+    background-position: bottom right -80px;
   }
 }
 
@@ -4987,6 +4989,7 @@ button,
 
   .subscription::after {
     display: none;
+    background-image: none;
   }
 
   .subscription__wrapper h2 {
@@ -5697,9 +5700,9 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .subscription::after {
-    background-image: url("../img/weights/weights-desktop@2x.png");
+    background-image: url("../img/weights@2x.png");
     background-repeat: no-repeat;
-    background-size: 287px 494px;
-    background-position: bottom right;
+    background-size: 459px 499px;
+    background-position: bottom right -160px;
   }
 }
