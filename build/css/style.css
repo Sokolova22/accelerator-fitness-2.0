@@ -4518,7 +4518,7 @@ button,
   }
 
   .promo h2 {
-    margin-bottom: 43px;
+    margin-bottom: 45px;
     font-size: 42px;
     line-height: 43.68px;
     letter-spacing: 1.2px;
@@ -4704,8 +4704,8 @@ button,
   .free-lesson__wrapper {
     max-width: 100%;
     margin: 0 auto;
-    padding: 65px 119px 68px 89px;
-    gap: 24px 60px;
+    padding: 61px 161px 68px 131px;
+    gap: 25px 60px;
   }
 
   .free-lesson__wrapper h2 {
