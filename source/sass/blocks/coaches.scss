@@ -248,9 +248,13 @@
 
   &--prev {
     top: 51%;
-    left: 16px;
+    left: 25px;
     transform: translate(0, -50%);
     background-image: url("../img/sprite/icon-arrow-prev.svg");
+
+    @media (max-width: 1360px) and (min-width: 1200) {
+      left: 16px;
+    }
 
     @include vp-1199 {
       top: 51%;
@@ -267,10 +271,14 @@
 
     &:hover,
     &:focus {
-      left: 16px;
+      left: 25px;
       background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;
+
+      @media (max-width: 1360px) and (min-width: 1200) {
+        left: 16px;
+      }
 
       @include vp-1199 {
         left: 25px;
@@ -297,10 +305,14 @@
 
   &--next {
     top: calc(51% - 56px);
-    right: 16px;
+    right: 25px;
     transform: translate(0, -50%);
     rotate: 180deg;
     background-image: url("../img/sprite/icon-arrow-prev.svg");
+
+    @media (max-width: 1360px) and (min-width: 1200) {
+      right: 16px;
+    }
 
     @include vp-1199 {
       top: calc(51% - 56px);
@@ -318,10 +330,14 @@
     &:hover,
     &:focus {
       top: calc(51% - 56px);
-      right: 16px;
+      right: 25px;
       background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;
+
+      @media (max-width: 1360px) and (min-width: 1200) {
+        right: 16px;
+      }
 
       @include vp-1199 {
         top: calc(51% - 56px);

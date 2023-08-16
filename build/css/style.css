@@ -2839,7 +2839,7 @@ button,
 
 .coaches__swiper-button--prev {
   top: 51%;
-  left: 16px;
+  left: 25px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -2848,7 +2848,7 @@ button,
 
 .coaches__swiper-button--prev:hover,
 .coaches__swiper-button--prev:focus {
-  left: 16px;
+  left: 25px;
   background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
   background-size: 56px 56px;
   outline: none;
@@ -2861,7 +2861,7 @@ button,
 
 .coaches__swiper-button--next {
   top: calc(51% - 56px);
-  right: 16px;
+  right: 25px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -2872,7 +2872,7 @@ button,
 .coaches__swiper-button--next:hover,
 .coaches__swiper-button--next:focus {
   top: calc(51% - 56px);
-  right: 16px;
+  right: 25px;
   background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
   background-size: 56px 56px;
   outline: none;
@@ -3073,10 +3073,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (minmax(211px, -webkit-min-content))[1];
-  -ms-grid-rows: (minmax(211px, min-content))[1];
-  grid-template-rows: repeat(1, minmax(211px, -webkit-min-content));
-  grid-template-rows: repeat(1, minmax(211px, min-content));
+  -ms-grid-rows: minmax(211px, -webkit-min-content);
+  -ms-grid-rows: minmax(211px, min-content);
+  grid-template-rows: minmax(211px, -webkit-min-content);
+  grid-template-rows: minmax(211px, min-content);
   gap: 40px;
 }
 
@@ -4550,7 +4550,7 @@ button,
   }
 
   .promo__wrapper {
-    width: 678px;
+    max-width: 678px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -4584,6 +4584,9 @@ button,
 
   .promo__box {
     min-height: 211px;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
   }
 
   .promo__box a {
@@ -5298,7 +5301,7 @@ button,
   }
 
   .advantages__description--gyms h6 {
-    margin: -22px 0 9px;
+    margin: -26px 0 9px;
   }
 
   .advantages__description--comfort p {
@@ -5750,6 +5753,26 @@ button,
 @media (min-width: 1200px) and (max-width: 1360px) {
   .coaches__swiper {
     width: 1055px;
+  }
+}
+
+@media (max-width: 1360px) and (min-width: 1200) {
+  .coaches__swiper-button--prev {
+    left: 16px;
+  }
+
+  .coaches__swiper-button--prev:hover,
+  .coaches__swiper-button--prev:focus {
+    left: 16px;
+  }
+
+  .coaches__swiper-button--next {
+    right: 16px;
+  }
+
+  .coaches__swiper-button--next:hover,
+  .coaches__swiper-button--next:focus {
+    right: 16px;
   }
 }
 
