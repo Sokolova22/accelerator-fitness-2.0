@@ -135,8 +135,6 @@
     background-size: cover;
 
     @include vp-767 {
-      width: 32px;
-      height: 32px;
       background-size: 32px 32px;
     }
   }
