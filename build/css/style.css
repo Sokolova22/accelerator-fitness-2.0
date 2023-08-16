@@ -1683,6 +1683,7 @@ button,
   right: 0;
   left: 0;
   bottom: -25px;
+  width: 200px;
   color: #ff121f;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2276,6 +2277,10 @@ button,
 .subscription__element-wrapper:not(:last-child) {
   margin-right: 40px;
   margin-bottom: 30px;
+}
+
+.subscription__element-wrapper:nth-child(3n) {
+  margin-right: 0;
 }
 
 .subscription__element-wrapper:hover::before {
@@ -4323,6 +4328,10 @@ button,
     margin-right: 0;
   }
 
+  .subscription__element-wrapper:nth-child(3n) {
+    margin: 0 0 auto 30px;
+  }
+
   .subscription__element-wrapper:hover::before {
     max-width: 442px;
   }
@@ -4845,7 +4854,6 @@ button,
   .custom-textarea label textarea {
     max-width: unset;
     width: 100%;
-    margin-bottom: -25px;
   }
 
   .custom-input__label,
@@ -5173,7 +5181,7 @@ button,
   }
 
   .coaches__swiper-button--prev {
-    top: 51%;
+    top: 52%;
     left: 5px;
     width: 32px;
     height: 32px;
@@ -5182,13 +5190,13 @@ button,
 
   .coaches__swiper-button--prev:hover,
   .coaches__swiper-button--prev:focus {
-    top: 51%;
+    top: 52%;
     left: 5px;
     background-size: 32px 32px;
   }
 
   .coaches__swiper-button--prev:active {
-    top: 51%;
+    top: 52%;
     left: 5px;
     background-size: 32px 32px;
   }
@@ -5710,6 +5718,16 @@ button,
     background-repeat: no-repeat;
     background-size: 459px 499px;
     background-position: bottom right -177px;
+  }
+}
+
+@media (max-width: 1229px) and (min-width: 1199px) {
+  .subscription__element-wrapper:nth-child(3n) {
+    margin-right: 40px;
+  }
+
+  .subscription__element-wrapper:last-child {
+    margin-right: 40px;
   }
 }
 
