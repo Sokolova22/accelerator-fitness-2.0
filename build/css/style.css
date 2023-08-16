@@ -2029,7 +2029,7 @@ button,
 .gym__box {
   position: relative;
   max-width: 660px;
-  max-height: 401px;
+  height: 100%;
 }
 
 .gym__image {
@@ -2040,13 +2040,15 @@ button,
   -ms-grid-row-span: 3;
   grid-row: 1/4;
   max-width: 660px;
-  max-height: 401px;
   background-color: #c8c9cc;
 }
 
 .gym__image img {
   width: 100%;
+  height: 100%;
   padding: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .gym__video-wrapper {
@@ -2055,7 +2057,6 @@ button,
   top: 71.5%;
   left: -9.5%;
   max-width: 364px;
-  height: 228px;
 }
 
 .gym__video {
@@ -2063,7 +2064,6 @@ button,
   object-fit: cover;
   margin: 0 auto;
   max-width: 364px;
-  max-height: 228px;
 }
 
 .gym__video-button {
@@ -2266,6 +2266,7 @@ button,
   z-index: 4;
   list-style: none;
   padding: 62px 77px;
+  margin-bottom: 30px;
   max-width: 360px;
   height: 100%;
   min-height: 448px;
@@ -2276,11 +2277,6 @@ button,
 
 .subscription__element-wrapper:not(:last-child) {
   margin-right: 40px;
-  margin-bottom: 30px;
-}
-
-.subscription__element-wrapper:nth-child(3n) {
-  margin-right: 0;
 }
 
 .subscription__element-wrapper:hover::before {
@@ -2351,7 +2347,7 @@ button,
 }
 
 .subscription__btn:active {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .subscription__text {
@@ -2463,10 +2459,10 @@ button,
   max-width: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[auto];
-  grid-template-columns: repeat(auto, auto);
-  -ms-grid-rows: (auto-content)[4];
-  grid-template-rows: repeat(4, auto-content);
+  -ms-grid-columns: auto, auto;
+  grid-template-columns: auto, auto;
+  -ms-grid-rows: (auto-content)[3];
+  grid-template-rows: repeat(3, auto-content);
   gap: 24px 60px;
   padding: 86px 78px;
   background-color: #ed0233;
@@ -2843,7 +2839,7 @@ button,
 
 .coaches__swiper-button--prev {
   top: 51%;
-  left: 29px;
+  left: 16px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -2852,7 +2848,7 @@ button,
 
 .coaches__swiper-button--prev:hover,
 .coaches__swiper-button--prev:focus {
-  left: 29px;
+  left: 16px;
   background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
   background-size: 56px 56px;
   outline: none;
@@ -2865,7 +2861,7 @@ button,
 
 .coaches__swiper-button--next {
   top: calc(51% - 56px);
-  right: 29px;
+  right: 16px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -2876,7 +2872,7 @@ button,
 .coaches__swiper-button--next:hover,
 .coaches__swiper-button--next:focus {
   top: calc(51% - 56px);
-  right: 29px;
+  right: 16px;
   background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
   background-size: 56px 56px;
   outline: none;
@@ -3077,8 +3073,10 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (minmax(211px, auto))[2];
-  grid-template-rows: repeat(2, minmax(211px, auto));
+  -ms-grid-rows: (minmax(211px, -webkit-min-content))[1];
+  -ms-grid-rows: (minmax(211px, min-content))[1];
+  grid-template-rows: repeat(1, minmax(211px, -webkit-min-content));
+  grid-template-rows: repeat(1, minmax(211px, min-content));
   gap: 40px;
 }
 
@@ -3171,9 +3169,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
 }
 
 .promo__description--secondary h4,
@@ -3238,6 +3233,9 @@ button,
 }
 
 .promo__photo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -3252,9 +3250,9 @@ button,
   -o-border-image: linear-gradient(160deg, #d10a42 20%, #0041ca 75%);
   border-image: linear-gradient(160deg, #d10a42 20%, #0041ca 75%);
   border-image-slice: 1;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .promo__box h4 {
@@ -3512,27 +3510,39 @@ button,
 }
 
 .feedback__swiper {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
   margin: 0 auto;
   width: 560px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .feedback__swiper-wrapper {
   color: #ffffff;
   cursor: -webkit-grab;
   cursor: grab;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 242px;
 }
 
 .feedback__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   position: relative;
   padding: 56px 55px 58px 62px;
   background-color: #1c3374;
   -webkit-filter: drop-shadow(0 0 40 #1c3374);
   filter: drop-shadow(0 0 40 #1c3374);
-  min-height: 242px;
+  height: auto;
 }
 
 .feedback__slide h6 {
@@ -3946,6 +3956,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .footer-nav__item:not(:last-of-type) {
@@ -4237,25 +4248,21 @@ button,
   .gym__box {
     margin: 0 auto;
     max-width: 678px;
-    max-height: 345px;
   }
 
   .gym__image {
     margin: 0 auto;
     max-width: 678px;
-    max-height: 345px;
   }
 
   .gym__video-wrapper {
     top: 75.5%;
     left: calc(50% - 133px);
     max-width: 266px;
-    max-height: 167px;
   }
 
   .gym__video {
     width: 100%;
-    height: 167px;
   }
 
   .gym__video-button {
@@ -4317,19 +4324,14 @@ button,
   }
 
   .subscription__element-wrapper {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 70px 118px;
+    margin: 0 auto 30px auto;
+    padding: 70px 118px 70px;
     max-width: 442px;
   }
 
   .subscription__element-wrapper:not(:last-child) {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .subscription__element-wrapper:nth-child(3n) {
-    margin: 0 0 auto 30px;
   }
 
   .subscription__element-wrapper:hover::before {
@@ -4358,11 +4360,6 @@ button,
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 18px;
-  }
-
-  .super-games__info p {
-    margin-top: 0;
-    margin-bottom: 27px;
   }
 
   .super-games__description {
@@ -4536,7 +4533,7 @@ button,
   }
 
   .advantages__description--gyms h6 {
-    margin: -22px 0 14px;
+    margin: -17px 0 14px;
     font-size: 22px;
     line-height: 30px;
   }
@@ -4970,7 +4967,7 @@ button,
 
   .gym__box {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
   }
 
   .gym__image {
@@ -4979,7 +4976,7 @@ button,
 
   .gym__video-wrapper {
     position: relative;
-    top: 0;
+    top: 100%;
     left: 0;
     margin-left: auto;
     margin-right: auto;
@@ -4988,11 +4985,10 @@ button,
 
   .gym__video {
     max-width: 678px;
-    max-height: 167px;
   }
 
   .gym__video-button {
-    top: 28%;
+    top: 42%;
     left: calc(50% - 37px);
     width: 73px;
     height: 73px;
@@ -5044,7 +5040,6 @@ button,
   }
 
   .subscription__element-wrapper:not(:last-child) {
-    margin: 0 auto;
     margin-bottom: 34px;
   }
 
@@ -5122,7 +5117,12 @@ button,
   }
 
   .super-games__info h2 {
-    margin-left: 8px;
+    max-width: 100px;
+    margin-left: auto;
+  }
+
+  .super-games__info p {
+    margin: 0 auto 27px;
   }
 
   .super-games__description dt {
@@ -5298,7 +5298,7 @@ button,
   }
 
   .advantages__description--gyms h6 {
-    margin: -26px 0 9px;
+    margin: -22px 0 9px;
   }
 
   .advantages__description--comfort p {
@@ -5477,9 +5477,12 @@ button,
     width: 100%;
   }
 
+  .feedback__swiper-wrapper {
+    min-height: 335px;
+  }
+
   .feedback__slide {
     width: 100%;
-    min-height: 335px;
     padding: 48px 17px 33px;
   }
 
@@ -5554,8 +5557,8 @@ button,
 
   .free-lesson__wrapper {
     padding: 65px 15px 69px 15px;
-    gap: 0;
     margin-top: 0;
+    gap: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5582,7 +5585,7 @@ button,
 
   .free-lesson__input {
     width: 100%;
-    margin-bottom: 51px;
+    margin-bottom: 26px;
   }
 
   .contact-information {
@@ -5680,6 +5683,18 @@ button,
 }
 
 @media (max-width: 374px) {
+  .gym__video {
+    max-height: 167px;
+  }
+
+  .gym__video-button {
+    top: 28%;
+    left: calc(50% - 37px);
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+  }
+
   .coaches__swiper {
     padding: 0 22px;
     max-width: 270px;
@@ -5721,13 +5736,14 @@ button,
   }
 }
 
-@media (max-width: 1229px) and (min-width: 1199px) {
-  .subscription__element-wrapper:nth-child(3n) {
-    margin-right: 40px;
+@media (max-width: 1270px) and (min-width: 1199px) {
+  .subscription__wrapper {
+    padding: 120px 15px 89px;
   }
 
-  .subscription__element-wrapper:last-child {
-    margin-right: 40px;
+  .subscription__element-wrapper {
+    padding: 62px 70px;
+    margin-right: 20px;
   }
 }
 

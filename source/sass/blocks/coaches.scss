@@ -248,7 +248,7 @@
 
   &--prev {
     top: 51%;
-    left: 29px;
+    left: 16px;
     transform: translate(0, -50%);
     background-image: url("../img/sprite/icon-arrow-prev.svg");
 
@@ -267,7 +267,7 @@
 
     &:hover,
     &:focus {
-      left: 29px;
+      left: 16px;
       background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;
@@ -297,7 +297,7 @@
 
   &--next {
     top: calc(51% - 56px);
-    right: 29px;
+    right: 16px;
     transform: translate(0, -50%);
     rotate: 180deg;
     background-image: url("../img/sprite/icon-arrow-prev.svg");
@@ -318,7 +318,7 @@
     &:hover,
     &:focus {
       top: calc(51% - 56px);
-      right: 29px;
+      right: 16px;
       background-image: url("../img/sprite/icon-arrow-prev-hf.svg");
       background-size: 56px 56px;
       outline: none;

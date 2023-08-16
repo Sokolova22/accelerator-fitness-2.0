@@ -68,6 +68,11 @@
     }
   }
 
+  @media (max-width: 1270px) and (min-width: 1199px) {
+    // padding: 62px 60px;
+    padding: 120px 15px 89px;
+  }
+
   @include vp-1199 {
     padding: 100px 0;
 
@@ -294,16 +299,25 @@
   z-index: 4;
   list-style: none;
   padding: 62px 77px;
+  // margin-right: 40px;
+  margin-bottom: 30px;
+
   max-width: 360px;
   height: 100%;
   min-height: 448px;
   background-color: $color-default-white;
   box-sizing: border-box;
 
+  @media (max-width: 1270px) and (min-width: 1199px) {
+    padding: 62px 70px;
+    // padding: 120px 15px 89px;
+    margin-right: 20px;
+  }
+
   @include vp-1199 {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 70px 118px;
+    margin: 0 auto 30px auto;
+    // margin-bottom: 30px;
+    padding: 70px 118px 70px;
     max-width: 442px;
   }
 
@@ -315,7 +329,7 @@
 
   &:not(:last-child) {
     margin-right: 40px;
-    margin-bottom: 30px;
+
 
     @include vp-1199 {
       margin-left: 0;
@@ -323,28 +337,37 @@
     }
 
     @include vp-767 {
-      margin: 0 auto;
       margin-bottom: 34px;
     }
   }
+  //   @include vp-1199 {
+  //     margin-left: 0;
+  //     margin-right: 0;
+  //   }
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  //   @include vp-767 {
+  //     margin: 0 auto;
+  //     margin-bottom: 34px;
+  //   }
+  // }
 
-    @media (max-width: 1229px) and (min-width: 1199px) {
-      margin-right: 40px;
-    }
+  // &:nth-child(3n) {
+  //   margin-right: 0;
 
-    @include vp-1199 {
-      margin: 0 0 auto 30px;
-    }
-  }
+  //   @media (max-width: 1229px) and (min-width: 1199px) {
+  //     margin-right: 40px;
+  //   }
 
-  &:last-child {
-    @media (max-width: 1229px) and (min-width: 1199px) {
-      margin-right: 40px;
-    }
-  }
+  //   @include vp-1199 {
+  //     margin: 0 auto;
+  //   }
+  // }
+
+  // &:last-child {
+  //   @media (max-width: 1229px) and (min-width: 1199px) {
+  //     margin-right: 40px;
+  //   }
+  // }
 
   &:hover {
     &::before {
@@ -438,7 +461,7 @@
   }
 
   &:active {
-    color: $color-default-white;
+    color: $color-default-white-opacity;
   }
 
   @include vp-767 {
