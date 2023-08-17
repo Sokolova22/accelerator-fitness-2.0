@@ -3510,8 +3510,6 @@ button,
 }
 
 .feedback__swiper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   margin: 0 auto;
   width: 560px;
   height: 100%;

@@ -4,7 +4,7 @@
   padding: 138px 103px 120px;
   max-width: 1366px;
   width: 100%;
-  // height: 100%;
+
   @include vp-1199 {
     max-width: 768px;
     padding: 95px 45px 100px;
@@ -14,9 +14,6 @@
     max-width: 700px;
     padding: 66px 45px 69px;
   }
-  // @include vp-374 {
-  //   padding: 66px 15px 69px;
-  // }
 
   h2 {
     padding: 0;
@@ -46,14 +43,10 @@
 }
 
 .feedback__swiper {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-
   margin: 0 auto;
   width: 560px;
   height: 100%;
   display: flex;
-
   align-items: stretch;
 
   @include vp-1199 {
