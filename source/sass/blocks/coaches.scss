@@ -252,7 +252,7 @@
     transform: translate(0, -50%);
     background-image: url("../img/sprite/icon-arrow-prev.svg");
 
-    @media (max-width: 1360px) and (min-width: 1200) {
+    @media (max-width: 1360px) and (min-width: 1200px) {
       left: 16px;
     }
 
@@ -276,7 +276,7 @@
       background-size: 56px 56px;
       outline: none;
 
-      @media (max-width: 1360px) and (min-width: 1200) {
+      @media (max-width: 1360px) and (min-width: 1200px) {
         left: 16px;
       }
 
@@ -310,7 +310,7 @@
     rotate: 180deg;
     background-image: url("../img/sprite/icon-arrow-prev.svg");
 
-    @media (max-width: 1360px) and (min-width: 1200) {
+    @media (max-width: 1360px) and (min-width: 1200px) {
       right: 16px;
     }
 
@@ -335,7 +335,7 @@
       background-size: 56px 56px;
       outline: none;
 
-      @media (max-width: 1360px) and (min-width: 1200) {
+      @media (max-width: 1360px) and (min-width: 1200px) {
         right: 16px;
       }
 

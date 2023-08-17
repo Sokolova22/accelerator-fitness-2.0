@@ -5754,7 +5754,7 @@ button,
   }
 }
 
-@media (max-width: 1360px) and (min-width: 1200) {
+@media (max-width: 1360px) and (min-width: 1200px) {
   .coaches__swiper-button--prev {
     left: 16px;
   }
