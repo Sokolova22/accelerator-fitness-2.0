@@ -5756,21 +5756,21 @@ button,
 
 @media (max-width: 1360px) and (min-width: 1200px) {
   .coaches__swiper-button--prev {
-    left: 16px;
+    left: 5px;
   }
 
   .coaches__swiper-button--prev:hover,
   .coaches__swiper-button--prev:focus {
-    left: 16px;
+    left: 5px;
   }
 
   .coaches__swiper-button--next {
-    right: 16px;
+    right: 5px;
   }
 
   .coaches__swiper-button--next:hover,
   .coaches__swiper-button--next:focus {
-    right: 16px;
+    right: 5px;
   }
 }
 
